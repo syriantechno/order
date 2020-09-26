@@ -1,22 +1,23 @@
 <?php include('ultra.php'); ?>
 <?php get_header(); ?>
 <?php
-add_page_info('title', 'جمعية المستقبل للمعوقين بحلب');
+add_page_info('title', 'order delivery');
 ?>
 <?php $accounts = get_accounts(array('_GET' => true)); ?>
 
 
 <div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div class="row space-5">
-            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+        <div class="row space-5" style="margin-top: 40px;">
+            <div class=" col-md-3 col-sm-6" style="padding: 1px 15px;">
                 <div class="box-menu">
                     <a href="<?php site_url('admin/account/'); ?>">
                         <div class="card-icon">
                             <i class="faw fa-users" style="color: #ffffff; font-size: 45px; "></i>
                         </div>
                         <span class="icon-box1">
-                <div class="stats-title">الحسابات <small class="text-muted" style="color: #ffffff">(<?php echo $accounts->num_rows; ?>)</small></div>
+                <div class="stats-title">الحسابات <small class="text-muted"
+                                                         style="color: #ffffff">(<?php echo $accounts->num_rows; ?>)</small></div>
                 <br>
                 <br>
                 <hr>
@@ -25,7 +26,7 @@ add_page_info('title', 'جمعية المستقبل للمعوقين بحلب');
                     </a>
                 </div> <!-- /.box-menu -->
             </div> <!-- /.col-* -->
-            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+            <div class=" col-md-3 col-sm-6" style="padding: 1px 15px;">
                 <div class="box-menu">
                     <a href="<?php site_url('admin/item/'); ?>">
                         <div class="card-icon1">
@@ -42,7 +43,7 @@ add_page_info('title', 'جمعية المستقبل للمعوقين بحلب');
                     </a>
                 </div>
             </div>
-            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+            <div class=" col-md-3 col-sm-6" style="padding: 1px 15px;">
                 <div class="box-menu">
                     <a href="<?php site_url('admin/form/'); ?>">
                         <div class="card-icon2">
@@ -60,7 +61,7 @@ add_page_info('title', 'جمعية المستقبل للمعوقين بحلب');
                 </div> <!-- /.box-menu -->
             </div>
             <?php if (user_access('admin')): ?>
-                <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+                <div class=" col-md-3 col-sm-6" style="padding: 1px 15px;">
                 <div class="box-menu">
                     <a href="<?php site_url('admin/payment/'); ?>">
                         <div class="card-icon3">
@@ -77,40 +78,40 @@ add_page_info('title', 'جمعية المستقبل للمعوقين بحلب');
                     </a>
                 </div> <!-- /.box-menu -->
                 </div><?php endif; ?> <!-- /.col-* -->
-            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
-                <div class="box-menu">
-                    <a href="<?php site_url('admin/user/'); ?>">
-                        <div class="card-icon4">
-                            <i class="faw fa-user-o" style="color: #ffffff; font-size: 45px; "></i>
-                        </div>
-                        <span class="icon-box1">
-                            <div class="stats-title">الموظفين</div>
-                             <br>
-                <br>
-                             <hr>
-			    <div class="stats-desc">إضافة موظفين واعطاء الرتب</div>
-                        </span>
-
-                    </a>
-                </div>
-            </div>
-            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
-                <div class="box-menu">
-                    <a href="<?php site_url('admin/system/'); ?>">
-                        <div class="card-icon5">
-                            <i class="faw fa-cogs" style="color: #ffffff; font-size: 45px; "></i>
-                        </div>
-                        <span class="icon-box1">
-                            <div class="stats-title">الاعدادات</div>
-                             <br>
-                <br>
-                             <hr>
-			    <div class="stats-desc">تعديل اعدادت البرنامج</div>
-                        </span>
-
-                    </a>
-                </div>
-            </div>
+<!--            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">-->
+<!--                <div class="box-menu">-->
+<!--                    <a href="--><?php //site_url('admin/user/'); ?><!--">-->
+<!--                        <div class="card-icon4">-->
+<!--                            <i class="faw fa-user-o" style="color: #ffffff; font-size: 45px; "></i>-->
+<!--                        </div>-->
+<!--                        <span class="icon-box1">-->
+<!--                            <div class="stats-title">الموظفين</div>-->
+<!--                             <br>-->
+<!--                <br>-->
+<!--                             <hr>-->
+<!--			    <div class="stats-desc">إضافة موظفين واعطاء الرتب</div>-->
+<!--                        </span>-->
+<!---->
+<!--                    </a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">-->
+<!--                <div class="box-menu">-->
+<!--                    <a href="--><?php //site_url('admin/system/'); ?><!--">-->
+<!--                        <div class="card-icon5">-->
+<!--                            <i class="faw fa-cogs" style="color: #ffffff; font-size: 45px; "></i>-->
+<!--                        </div>-->
+<!--                        <span class="icon-box1">-->
+<!--                            <div class="stats-title">الاعدادات</div>-->
+<!--                             <br>-->
+<!--                <br>-->
+<!--                             <hr>-->
+<!--			    <div class="stats-desc">تعديل اعدادت البرنامج</div>-->
+<!--                        </span>-->
+<!---->
+<!--                    </a>-->
+<!--                </div>-->
+<!--            </div>-->
         </div>
         <div class="row space-5">
 
@@ -119,187 +120,478 @@ add_page_info('title', 'جمعية المستقبل للمعوقين بحلب');
 
     </div>
 
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+        <div class="card" style="margin-top: 50px;">
+            <div class="card-header card-header-success">
+                <?php
+                $total['day'] = 0;
+                $total['yesterday'] = 0;
+                $total['last7day'] = 0;
+                $total['thisMonth'] = 0;
+                $total['last8Day'] = 0;
+                $total['lastWeek'] = 0;
+                $total['lastMonth'] = 0;
+
+                $args['status'] = 1;
+                $args['type'] = 'form';
+                $args['in_out'] = '0';
+                $args['q'] = "date >= '" . date('Y-m', strtotime("-1 months")) . "-01 00:00:000' AND date <= '" . date('Y-m-d') . " 23:59:59'";
+                $query = db()->query("SELECT date,item_count FROM " . dbname('forms') . " " . sql_where_string($args) . " ");
+
+                if ($query->num_rows) {
+                    while ($list = $query->fetch_object()) {
+                        $_date = til_get_date($list->date, 'Y-m-d');
+
+                        // day
+                        if ($_date == date('Y-m-d')) {
+                            $total['day'] = $total['day'] + $list->item_count;
+                        }
+
+                        // yesterday
+                        if ($_date == date('Y-m-d', strtotime("-1 day"))) {
+                            $total['yesterday'] = $total['yesterday'] + $list->item_count;
+                        }
+
+                        // last7day
+                        if ($_date >= date('Y-m-d', strtotime("-8 day")) AND $_date <= date('Y-m-d')) {
+                            $total['last7day'] = $total['last7day'] + $list->item_count;
+                        }
+
+                        // thisMonth
+                        if ($_date >= date('Y-m') . "-01" AND $_date <= date('Y-m-d')) {
+                            $total['thisMonth'] = $total['thisMonth'] + $list->item_count;
+                        }
+
+                        // last8Day
+                        if ($_date >= date('Y-m-d', strtotime("-8 day")) AND $_date <= date('Y-m-d', strtotime("-8 day"))) {
+                            $total['last8Day'] = $total['last8Day'] + $list->item_count;
+                        }
+
+                        // lastWeek
+                        if ($_date >= date('Y-m-d', strtotime("-14 day")) AND $_date <= date('Y-m-d', strtotime("-8 day"))) {
+                            $total['lastWeek'] = $total['lastWeek'] + $list->item_count;
+                        }
+
+                        // lastMonth
+                        if ($_date >= date('Y-m', strtotime("-1 months")) . "-01" AND $_date <= date('Y-m', strtotime("-1 months")) . "-" . date('d H:i:s')) {
+                            $total['lastMonth'] = $total['lastMonth'] + $list->item_count;
+                        }
+                    }
+                }
+                ?>
+                <hr class="visible-xs"/>
+
+                <div class="h-20 visible-xs"></div>
 
 
-        <?php
-        $total['day'] = 0;
-        $total['yesterday'] = 0;
-        $total['last7day'] = 0;
-        $total['thisMonth'] = 0;
-        $total['last8Day'] = 0;
-        $total['lastWeek'] = 0;
-        $total['lastMonth'] = 0;
+                <?php
+                $chart = array();
+                $chart['type'] = 'line';
+                $chart['data']['datasets'][0]['label'] = 'الحركة';
+                $chart['data']['datasets'][0]['fill'] = false;
+                $chart['data']['datasets'][0]['lineTension'] = '0.3';
+                $chart['data']['datasets'][0]['borderWidth'] = 5;
+                $chart['data']['datasets'][0]['pointBorderWidth'] = 3;
+                $chart['data']['datasets'][0]['pointRadius'] = 5;
 
-        $args['status'] = 1;
-        $args['type'] = 'form';
-        $args['in_out'] = '0';
-        $args['q'] = "date >= '" . date('Y-m', strtotime("-1 months")) . "-01 00:00:000' AND date <= '" . date('Y-m-d') . " 23:59:59'";
-        $query = db()->query("SELECT date,item_count FROM " . dbname('forms') . " " . sql_where_string($args) . " ");
+                $chart['data']['datasets'][1]['label'] = 'دخول المال';
+                $chart['data']['datasets'][1]['type'] = 'line';
+                $chart['data']['datasets'][1]['fill'] = false;
+                $chart['data']['datasets'][1]['lineTension'] = '0.3';
+                $chart['data']['datasets'][1]['borderWidth'] = 1.5;
+                $chart['data']['datasets'][1]['pointBorderWidth'] = 1;
+                $chart['data']['datasets'][1]['pointRadius'] = 1.5;
 
-        if ($query->num_rows) {
-            while ($list = $query->fetch_object()) {
-                $_date = til_get_date($list->date, 'Y-m-d');
+                $chart['data']['datasets'][2]['label'] = 'Giri?ler';
+                $chart['data']['datasets'][2]['fill'] = false;
+                $chart['data']['datasets'][2]['lineTension'] = '0.3';
+                $chart['data']['datasets'][2]['borderWidth'] = 1.5;
+                $chart['data']['datasets'][2]['pointBorderWidth'] = 1;
+                $chart['data']['datasets'][2]['pointRadius'] = 1;
 
-                // day
-                if ($_date == date('Y-m-d')) {
-                    $total['day'] = $total['day'] + $list->item_count;
+                $chart['data']['datasets'][3]['label'] = 'خروج المال';
+                $chart['data']['datasets'][3]['type'] = 'line';
+                $chart['data']['datasets'][3]['fill'] = false;
+                $chart['data']['datasets'][3]['lineTension'] = '0.3';
+                $chart['data']['datasets'][3]['borderWidth'] = 1.5;
+                $chart['data']['datasets'][3]['pointBorderWidth'] = 1;
+                $chart['data']['datasets'][3]['pointRadius'] = 1.4;
+
+
+                $_start_date = date('Y-m-d', strtotime('-2 week', strtotime(date('Y-m-d'))));
+                $_end_date = date('Y-m-d');
+                while (strtotime($_start_date) < strtotime($_end_date)) {
+                    $_start_date = date('Y-m-d', strtotime('+1 day', strtotime($_start_date)));
+
+                    $chart['data']['labels'][] = til_get_date($_start_date, 'd F');
+                    $_total = 0;
+                    $q_forms = db()->query("SELECT sum(item_count) as item_count FROM " . dbname('forms') . " WHERE status='1' AND type='form' AND in_out='0' AND date >= '" . $_start_date . " 00:00:00' AND date <= '" . $_start_date . " 23:59:59' ORDER BY id DESC, date DESC");
+                    if (($_total = $q_forms->fetch_object()->item_count) > 0) {
+                        $chart['data']['datasets'][0]['data'][] = $_total;
+                    } else {
+                        $chart['data']['datasets'][0]['data'][] = '0.00';
+                    }
+
+
                 }
 
-                // yesterday
-                if ($_date == date('Y-m-d', strtotime("-1 day"))) {
-                    $total['yesterday'] = $total['yesterday'] + $list->item_count;
+                $chart['options']['legend']['display'] = false;
+                $chart['options']['legend']['position'] = 'bottom';
+                $chart['options']['scales']['yAxes'][0]['display'] = true;
+                $chart['options']['scales']['yAxes'][0]['position'] = 'left';
+                $chart['options']['scales']['yAxes'][0]['ticks']['userCallback'] = "=TIL= function(value, index, values) { return value.formatMoney(2, '.', ',') + ' قطعة';  } =TIL=";
+                $chart['options']['scales']['xAxes'][0]['display'] = false;
+                $chart['options']['scales']['xAxes'][0]['ticks']['beginAtZero'] = true;
+                $chart['options']['maintainAspectRatio'] = false;
+                $chart['options']['tooltips']['enabled'] = true;
+                $chart['options']['tooltips']['callbacks']['label'] = "=TIL= function(tooltipItems, data) { return ' '+tooltipItems.yLabel.formatMoney(2, '.', ',') + ' قطعة'; } =TIL=";
+                $chart['options']['tooltips']['callbacks']['title'] = "=TIL= function(tooltipItems, data) { console.log(tooltipItems);  console.log(data); return tooltipItems[0].xLabel +' : '+ data.datasets[tooltipItems[0].datasetIndex].label; } =TIL=";
+
+
+                $args['height'] = '200';
+                $args['chart'] = $chart;
+                ?>
+                <div class="relative"><?php chartjs($args); ?></div>
+            </div>
+            <div class="h-40"></div>
+            <div class="h-20"></div>
+            <div class="stats-desc">إضافة صناديق وبنوك</div>
+        </div>
+        <br>
+        <br>
+        <hr>
+
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+        <div class="card" style="margin-top: 50px;">
+            <div class="card-header card-header-warning">
+                <?php
+                $total['day'] = 0;
+                $total['yesterday'] = 0;
+                $total['last7day'] = 0;
+                $total['thisMonth'] = 0;
+                $total['last8Day'] = 0;
+                $total['lastWeek'] = 0;
+                $total['lastMonth'] = 0;
+
+                $args['status'] = 1;
+                $args['type'] = 'form';
+                $args['in_out'] = '0';
+                $args['q'] = "date >= '" . date('Y-m', strtotime("-1 months")) . "-01 00:00:000' AND date <= '" . date('Y-m-d') . " 23:59:59'";
+                $query = db()->query("SELECT date,item_count FROM " . dbname('forms') . " " . sql_where_string($args) . " ");
+
+                if ($query->num_rows) {
+                    while ($list = $query->fetch_object()) {
+                        $_date = til_get_date($list->date, 'Y-m-d');
+
+                        // day
+                        if ($_date == date('Y-m-d')) {
+                            $total['day'] = $total['day'] + $list->item_count;
+                        }
+
+                        // yesterday
+                        if ($_date == date('Y-m-d', strtotime("-1 day"))) {
+                            $total['yesterday'] = $total['yesterday'] + $list->item_count;
+                        }
+
+                        // last7day
+                        if ($_date >= date('Y-m-d', strtotime("-8 day")) AND $_date <= date('Y-m-d')) {
+                            $total['last7day'] = $total['last7day'] + $list->item_count;
+                        }
+
+                        // thisMonth
+                        if ($_date >= date('Y-m') . "-01" AND $_date <= date('Y-m-d')) {
+                            $total['thisMonth'] = $total['thisMonth'] + $list->item_count;
+                        }
+
+                        // last8Day
+                        if ($_date >= date('Y-m-d', strtotime("-8 day")) AND $_date <= date('Y-m-d', strtotime("-8 day"))) {
+                            $total['last8Day'] = $total['last8Day'] + $list->item_count;
+                        }
+
+                        // lastWeek
+                        if ($_date >= date('Y-m-d', strtotime("-14 day")) AND $_date <= date('Y-m-d', strtotime("-8 day"))) {
+                            $total['lastWeek'] = $total['lastWeek'] + $list->item_count;
+                        }
+
+                        // lastMonth
+                        if ($_date >= date('Y-m', strtotime("-1 months")) . "-01" AND $_date <= date('Y-m', strtotime("-1 months")) . "-" . date('d H:i:s')) {
+                            $total['lastMonth'] = $total['lastMonth'] + $list->item_count;
+                        }
+                    }
+                }
+                ?>
+                <hr class="visible-xs"/>
+
+                <div class="h-20 visible-xs"></div>
+
+
+                <?php
+                $chart = array();
+                $chart['type'] = 'line';
+                $chart['data']['datasets'][0]['label'] = 'الحركة';
+                $chart['data']['datasets'][0]['fill'] = true;
+                $chart['data']['datasets'][0]['lineTension'] = '0.3';
+                $chart['data']['datasets'][0]['borderWidth'] = 2;
+                $chart['data']['datasets'][0]['pointBorderWidth'] = 3;
+                $chart['data']['datasets'][0]['pointRadius'] = 3;
+
+                $chart['data']['datasets'][1]['label'] = 'دخول المال';
+                $chart['data']['datasets'][1]['type'] = 'line';
+                $chart['data']['datasets'][1]['fill'] = true;
+                $chart['data']['datasets'][1]['lineTension'] = '0.3';
+                $chart['data']['datasets'][1]['borderWidth'] = 1.5;
+                $chart['data']['datasets'][1]['pointBorderWidth'] = 1;
+                $chart['data']['datasets'][1]['pointRadius'] = 1.5;
+
+                $chart['data']['datasets'][2]['label'] = 'Giri?ler';
+                $chart['data']['datasets'][2]['fill'] = true;
+                $chart['data']['datasets'][2]['lineTension'] = '0.3';
+                $chart['data']['datasets'][2]['borderWidth'] = 1.5;
+                $chart['data']['datasets'][2]['pointBorderWidth'] = 1;
+                $chart['data']['datasets'][2]['pointRadius'] = 1;
+
+                $chart['data']['datasets'][3]['label'] = 'خروج المال';
+                $chart['data']['datasets'][3]['type'] = 'line';
+                $chart['data']['datasets'][3]['fill'] = true;
+                $chart['data']['datasets'][3]['lineTension'] = '0.3';
+                $chart['data']['datasets'][3]['borderWidth'] = 1.5;
+                $chart['data']['datasets'][3]['pointBorderWidth'] = 1;
+                $chart['data']['datasets'][3]['pointRadius'] = 1.4;
+
+
+                $_start_date = date('Y-m-d', strtotime('-2 week', strtotime(date('Y-m-d'))));
+                $_end_date = date('Y-m-d');
+                while (strtotime($_start_date) < strtotime($_end_date)) {
+                    $_start_date = date('Y-m-d', strtotime('+1 day', strtotime($_start_date)));
+
+                    $chart['data']['labels'][] = til_get_date($_start_date, 'd F');
+                    $_total = 0;
+                    $q_forms = db()->query("SELECT sum(item_count) as item_count FROM " . dbname('forms') . " WHERE status='1' AND type='form' AND in_out='0' AND date >= '" . $_start_date . " 00:00:00' AND date <= '" . $_start_date . " 23:59:59' ORDER BY id DESC, date DESC");
+                    if (($_total = $q_forms->fetch_object()->item_count) > 0) {
+                        $chart['data']['datasets'][0]['data'][] = $_total;
+                    } else {
+                        $chart['data']['datasets'][0]['data'][] = '0.00';
+                    }
+
+
                 }
 
-                // last7day
-                if ($_date >= date('Y-m-d', strtotime("-8 day")) AND $_date <= date('Y-m-d')) {
-                    $total['last7day'] = $total['last7day'] + $list->item_count;
+                $chart['options']['legend']['display'] = false;
+                $chart['options']['legend']['position'] = 'bottom';
+                $chart['options']['scales']['yAxes'][0]['display'] = true;
+                $chart['options']['scales']['yAxes'][0]['position'] = 'left';
+                $chart['options']['scales']['yAxes'][0]['ticks']['userCallback'] = "=TIL= function(value, index, values) { return value.formatMoney(2, '.', ',') + ' قطعة';  } =TIL=";
+                $chart['options']['scales']['xAxes'][0]['display'] = false;
+                $chart['options']['scales']['xAxes'][0]['ticks']['beginAtZero'] = true;
+                $chart['options']['maintainAspectRatio'] = false;
+                $chart['options']['tooltips']['enabled'] = true;
+                $chart['options']['tooltips']['callbacks']['label'] = "=TIL= function(tooltipItems, data) { return ' '+tooltipItems.yLabel.formatMoney(2, '.', ',') + ' قطعة'; } =TIL=";
+                $chart['options']['tooltips']['callbacks']['title'] = "=TIL= function(tooltipItems, data) { console.log(tooltipItems);  console.log(data); return tooltipItems[0].xLabel +' : '+ data.datasets[tooltipItems[0].datasetIndex].label; } =TIL=";
+
+
+                $args['height'] = '200';
+                $args['chart'] = $chart;
+                ?>
+                <div class="relative"><?php chartjs($args); ?></div>
+            </div>
+            <div class="h-40"></div>
+            <div class="h-20"></div>
+            <div class="stats-desc">إضافة صناديق وبنوك</div>
+        </div>
+        <br>
+        <br>
+        <hr>
+
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+        <div class="card" style="margin-top: 50px;">
+            <div class="card-header card-header-danger">
+                <?php
+                $total['day'] = 0;
+                $total['yesterday'] = 0;
+                $total['last7day'] = 0;
+                $total['thisMonth'] = 0;
+                $total['last8Day'] = 0;
+                $total['lastWeek'] = 0;
+                $total['lastMonth'] = 0;
+
+                $args['status'] = 1;
+                $args['type'] = 'form';
+                $args['in_out'] = '0';
+                $args['q'] = "date >= '" . date('Y-m', strtotime("-1 months")) . "-01 00:00:000' AND date <= '" . date('Y-m-d') . " 23:59:59'";
+                $query = db()->query("SELECT date,item_count FROM " . dbname('forms') . " " . sql_where_string($args) . " ");
+
+                if ($query->num_rows) {
+                    while ($list = $query->fetch_object()) {
+                        $_date = til_get_date($list->date, 'Y-m-d');
+
+                        // day
+                        if ($_date == date('Y-m-d')) {
+                            $total['day'] = $total['day'] + $list->item_count;
+                        }
+
+                        // yesterday
+                        if ($_date == date('Y-m-d', strtotime("-1 day"))) {
+                            $total['yesterday'] = $total['yesterday'] + $list->item_count;
+                        }
+
+                        // last7day
+                        if ($_date >= date('Y-m-d', strtotime("-8 day")) AND $_date <= date('Y-m-d')) {
+                            $total['last7day'] = $total['last7day'] + $list->item_count;
+                        }
+
+                        // thisMonth
+                        if ($_date >= date('Y-m') . "-01" AND $_date <= date('Y-m-d')) {
+                            $total['thisMonth'] = $total['thisMonth'] + $list->item_count;
+                        }
+
+                        // last8Day
+                        if ($_date >= date('Y-m-d', strtotime("-8 day")) AND $_date <= date('Y-m-d', strtotime("-8 day"))) {
+                            $total['last8Day'] = $total['last8Day'] + $list->item_count;
+                        }
+
+                        // lastWeek
+                        if ($_date >= date('Y-m-d', strtotime("-14 day")) AND $_date <= date('Y-m-d', strtotime("-8 day"))) {
+                            $total['lastWeek'] = $total['lastWeek'] + $list->item_count;
+                        }
+
+                        // lastMonth
+                        if ($_date >= date('Y-m', strtotime("-1 months")) . "-01" AND $_date <= date('Y-m', strtotime("-1 months")) . "-" . date('d H:i:s')) {
+                            $total['lastMonth'] = $total['lastMonth'] + $list->item_count;
+                        }
+                    }
+                }
+                ?>
+                <hr class="visible-xs"/>
+
+                <div class="h-20 visible-xs"></div>
+
+
+                <?php
+                $chart = array();
+                $chart['type'] = 'line';
+                $chart['data']['datasets'][0]['label'] = 'الحركة';
+                $chart['data']['datasets'][0]['fill'] = true;
+                $chart['data']['datasets'][0]['lineTension'] = '0.3';
+                $chart['data']['datasets'][0]['borderWidth'] = 2;
+                $chart['data']['datasets'][0]['pointBorderWidth'] = 3;
+                $chart['data']['datasets'][0]['pointRadius'] = 3;
+
+                $chart['data']['datasets'][1]['label'] = 'دخول المال';
+                $chart['data']['datasets'][1]['type'] = 'line';
+                $chart['data']['datasets'][1]['fill'] = true;
+                $chart['data']['datasets'][1]['lineTension'] = '0.3';
+                $chart['data']['datasets'][1]['borderWidth'] = 1.5;
+                $chart['data']['datasets'][1]['pointBorderWidth'] = 1;
+                $chart['data']['datasets'][1]['pointRadius'] = 1.5;
+
+                $chart['data']['datasets'][2]['label'] = 'Giri?ler';
+                $chart['data']['datasets'][2]['fill'] = true;
+                $chart['data']['datasets'][2]['lineTension'] = '0.3';
+                $chart['data']['datasets'][2]['borderWidth'] = 1.5;
+                $chart['data']['datasets'][2]['pointBorderWidth'] = 1;
+                $chart['data']['datasets'][2]['pointRadius'] = 1;
+
+                $chart['data']['datasets'][3]['label'] = 'خروج المال';
+                $chart['data']['datasets'][3]['type'] = 'line';
+                $chart['data']['datasets'][3]['fill'] = true;
+                $chart['data']['datasets'][3]['lineTension'] = '0.3';
+                $chart['data']['datasets'][3]['borderWidth'] = 1.5;
+                $chart['data']['datasets'][3]['pointBorderWidth'] = 1;
+                $chart['data']['datasets'][3]['pointRadius'] = 1.4;
+
+
+                $_start_date = date('Y-m-d', strtotime('-2 week', strtotime(date('Y-m-d'))));
+                $_end_date = date('Y-m-d');
+                while (strtotime($_start_date) < strtotime($_end_date)) {
+                    $_start_date = date('Y-m-d', strtotime('+1 day', strtotime($_start_date)));
+
+                    $chart['data']['labels'][] = til_get_date($_start_date, 'd F');
+                    $_total = 0;
+                    $q_forms = db()->query("SELECT sum(item_count) as item_count FROM " . dbname('forms') . " WHERE status='1' AND type='form' AND in_out='0' AND date >= '" . $_start_date . " 00:00:00' AND date <= '" . $_start_date . " 23:59:59' ORDER BY id DESC, date DESC");
+                    if (($_total = $q_forms->fetch_object()->item_count) > 0) {
+                        $chart['data']['datasets'][0]['data'][] = $_total;
+                    } else {
+                        $chart['data']['datasets'][0]['data'][] = '0.00';
+                    }
+
+
                 }
 
-                // thisMonth
-                if ($_date >= date('Y-m') . "-01" AND $_date <= date('Y-m-d')) {
-                    $total['thisMonth'] = $total['thisMonth'] + $list->item_count;
-                }
-
-                // last8Day
-                if ($_date >= date('Y-m-d', strtotime("-8 day")) AND $_date <= date('Y-m-d', strtotime("-8 day"))) {
-                    $total['last8Day'] = $total['last8Day'] + $list->item_count;
-                }
-
-                // lastWeek
-                if ($_date >= date('Y-m-d', strtotime("-14 day")) AND $_date <= date('Y-m-d', strtotime("-8 day"))) {
-                    $total['lastWeek'] = $total['lastWeek'] + $list->item_count;
-                }
-
-                // lastMonth
-                if ($_date >= date('Y-m', strtotime("-1 months")) . "-01" AND $_date <= date('Y-m', strtotime("-1 months")) . "-" . date('d H:i:s')) {
-                    $total['lastMonth'] = $total['lastMonth'] + $list->item_count;
-                }
-            }
-        }
-        ?>
-        <hr class="visible-xs"/>
-
-        <div class="h-20 visible-xs"></div>
+                $chart['options']['legend']['display'] = false;
+                $chart['options']['legend']['position'] = 'bottom';
+                $chart['options']['scales']['yAxes'][0]['display'] = true;
+                $chart['options']['scales']['yAxes'][0]['position'] = 'left';
+                $chart['options']['scales']['yAxes'][0]['ticks']['userCallback'] = "=TIL= function(value, index, values) { return value.formatMoney(2, '.', ',') + ' قطعة';  } =TIL=";
+                $chart['options']['scales']['xAxes'][0]['display'] = false;
+                $chart['options']['scales']['xAxes'][0]['ticks']['beginAtZero'] = true;
+                $chart['options']['maintainAspectRatio'] = false;
+                $chart['options']['tooltips']['enabled'] = true;
+                $chart['options']['tooltips']['callbacks']['label'] = "=TIL= function(tooltipItems, data) { return ' '+tooltipItems.yLabel.formatMoney(2, '.', ',') + ' قطعة'; } =TIL=";
+                $chart['options']['tooltips']['callbacks']['title'] = "=TIL= function(tooltipItems, data) { console.log(tooltipItems);  console.log(data); return tooltipItems[0].xLabel +' : '+ data.datasets[tooltipItems[0].datasetIndex].label; } =TIL=";
 
 
-        <?php
-        $chart = array();
-        $chart['type'] = 'line';
-        $chart['data']['datasets'][0]['label'] = 'الحركة';
-        $chart['data']['datasets'][0]['fill'] = true;
-        $chart['data']['datasets'][0]['lineTension'] = '0.3';
-        $chart['data']['datasets'][0]['borderWidth'] = 2;
-        $chart['data']['datasets'][0]['pointBorderWidth'] = 3;
-        $chart['data']['datasets'][0]['pointRadius'] = 3;
+                $args['height'] = '200';
+                $args['chart'] = $chart;
+                ?>
+                <div class="relative"><?php chartjs($args); ?></div>
+             </div>
+            <div class="h-20"></div>
 
-        $chart['data']['datasets'][1]['label'] = 'دخول المال';
-        $chart['data']['datasets'][1]['type'] = 'line';
-        $chart['data']['datasets'][1]['fill'] = true;
-        $chart['data']['datasets'][1]['lineTension'] = '0.3';
-        $chart['data']['datasets'][1]['borderWidth'] = 1.5;
-        $chart['data']['datasets'][1]['pointBorderWidth'] = 1;
-        $chart['data']['datasets'][1]['pointRadius'] = 1.5;
+            <div class="h-40"></div>
 
-        $chart['data']['datasets'][2]['label'] = 'Giri?ler';
-        $chart['data']['datasets'][2]['fill'] = true;
-        $chart['data']['datasets'][2]['lineTension'] = '0.3';
-        $chart['data']['datasets'][2]['borderWidth'] = 1.5;
-        $chart['data']['datasets'][2]['pointBorderWidth'] = 1;
-        $chart['data']['datasets'][2]['pointRadius'] = 1;
+            <div class="card-footer">
+                <div class="stats">
+                    <i class="fa fa-facebook"></i>
+                </div>
+            </div>
+            <div class="stats-desc">إضافة صناديق وبنوك</div>
+        </div>
 
-        $chart['data']['datasets'][3]['label'] = 'خروج المال';
-        $chart['data']['datasets'][3]['type'] = 'line';
-        $chart['data']['datasets'][3]['fill'] = true;
-        $chart['data']['datasets'][3]['lineTension'] = '0.3';
-        $chart['data']['datasets'][3]['borderWidth'] = 1.5;
-        $chart['data']['datasets'][3]['pointBorderWidth'] = 1;
-        $chart['data']['datasets'][3]['pointRadius'] = 1.4;
-
-
-        $_start_date = date('Y-m-d', strtotime('-2 week', strtotime(date('Y-m-d'))));
-        $_end_date = date('Y-m-d');
-        while (strtotime($_start_date) < strtotime($_end_date)) {
-            $_start_date = date('Y-m-d', strtotime('+1 day', strtotime($_start_date)));
-
-            $chart['data']['labels'][] = til_get_date($_start_date, 'd F');
-            $_total = 0;
-            $q_forms = db()->query("SELECT sum(item_count) as item_count FROM " . dbname('forms') . " WHERE status='1' AND type='form' AND in_out='0' AND date >= '" . $_start_date . " 00:00:00' AND date <= '" . $_start_date . " 23:59:59' ORDER BY id DESC, date DESC");
-            if (($_total = $q_forms->fetch_object()->item_count) > 0) {
-                $chart['data']['datasets'][0]['data'][] = $_total;
-            } else {
-                $chart['data']['datasets'][0]['data'][] = '0.00';
-            }
-
-
-        }
-
-        $chart['options']['legend']['display'] = false;
-        $chart['options']['legend']['position'] = 'bottom';
-        $chart['options']['scales']['yAxes'][0]['display'] = true;
-        $chart['options']['scales']['yAxes'][0]['position'] = 'left';
-        $chart['options']['scales']['yAxes'][0]['ticks']['userCallback'] = "=TIL= function(value, index, values) { return value.formatMoney(2, '.', ',') + ' قطعة';  } =TIL=";
-        $chart['options']['scales']['xAxes'][0]['display'] = false;
-        $chart['options']['scales']['xAxes'][0]['ticks']['beginAtZero'] = true;
-        $chart['options']['maintainAspectRatio'] = false;
-        $chart['options']['tooltips']['enabled'] = true;
-        $chart['options']['tooltips']['callbacks']['label'] = "=TIL= function(tooltipItems, data) { return ' '+tooltipItems.yLabel.formatMoney(2, '.', ',') + ' قطعة'; } =TIL=";
-        $chart['options']['tooltips']['callbacks']['title'] = "=TIL= function(tooltipItems, data) { console.log(tooltipItems);  console.log(data); return tooltipItems[0].xLabel +' : '+ data.datasets[tooltipItems[0].datasetIndex].label; } =TIL=";
-
-
-        $args['height'] = '250';
-        $args['chart'] = $chart;
-        ?>
-        <div class="relative"><?php chartjs($args); ?></div>
-
-        <hr/>
 
 
     </div>
 </div>
-
-
 <div id="btnContainer">
     <button class=" btn btn-icon" onclick="listView()"><i class="fa fa-bars"></i> List</button>
     <button class=" btn btn-icon active" onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
 </div>
 <div class="h-10"></div>
-<div class="row">
-    <div class="col-md-6">
-
-        <div class="row space-6" style="padding-right: 15px; padding-left: 15px;">
+<div class="row space-6" style="padding-right: 15px; padding-left: 15px;">
 
 
-            <small class="text-muted"><i class="fa fa-long-arrow-up text-black"></i> نماذج المعونة</small>
+    <small class="text-muted"><i class="fa fa-long-arrow-up text-black"></i> نماذج المعونة</small>
 
-            <?php if ($form_status_all = get_form_status_all('0')): ?>
-                <div>
-                    <div class="list-group mobile-full list-group-dashboard" style="width: 100%;">
-                        <?php foreach ($form_status_all as $key => $status): ?>
-                            <a href="admin/form/list.php?status_id=<?php echo $status->id; ?>"
-                               class="list-group-item-column"
-                               style="border-left:25px solid <?php echo $status->bg_color; ?>; width: 50%">
-                                <?php echo $status->name; ?>
-                                <?php if ($status->is_default == 'default'): ?>
-                                    <small class="text-muted">(افتراضي)</small><?php endif; ?>
-                                <span class="pull-right"><?php echo $status->count = calc_form_status($status->id); ?></span>
-                            </a>
-                        <?php endforeach; ?>
-                    </div>
-                </div>
-
-            <?php endif; ?>
-
+    <?php if ($form_status_all = get_form_status_all('0')): ?>
+        <div>
+            <div class="list-group mobile-full list-group-dashboard" style="width: 100%;">
+                <?php foreach ($form_status_all as $key => $status): ?>
+                    <a href="admin/form/list.php?status_id=<?php echo $status->id; ?>"
+                       class="list-group-item-column"
+                       style="border-left:25px solid <?php echo $status->bg_color; ?>; width: 50%">
+                        <?php echo $status->name; ?>
+                        <?php if ($status->is_default == 'default'): ?>
+                            <small class="text-muted">(افتراضي)</small><?php endif; ?>
+                        <span class="pull-right"><?php echo $status->count = calc_form_status($status->id); ?></span>
+                    </a>
+                <?php endforeach; ?>
+            </div>
         </div>
 
-        <div class="h-20"></div>
+    <?php endif; ?>
 
-        <small class="text-muted"><i class="fa fa-file-o text-black"></i> اخر 50 حركة</small>
-        <div class="h-10"></div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="h-30"></div>
+        <div class="h-7"></div>
         <?php $query = db()->query("SELECT * FROM " . dbname('forms') . " WHERE status='1' AND type='form' AND in_out='0' ORDER BY date DESC LIMIT 50"); ?>
         <?php if ($query->num_rows): ?>
-
-            <div class="panel panel-success panel-heading-0 panel-border-right panel-table">
+<div class="card">
+    <div class="card-header card-header-tabs card-header-primary">
+        <div class="panel-heading"><h4 class="panel-title"><i class="fa fa-file-o text-white"></i>  اخر 50 حركة</h4></div>
+    </div>
                 <div class="panel-body" style="height:280px; overflow: auto;">
                     <table class="table table-hover table-condensed table-striped table-striped">
                         <tbody>
@@ -336,20 +628,24 @@ add_page_info('title', 'جمعية المستقبل للمعوقين بحلب');
                         </tbody>
                     </table>
                 </div>
-            </div>
+
         <?php else: ?>
 
         <?php endif; ?>
-
+</div>
     </div>
+
+
     <div class="col-md-6">
         <div class="row space-none">
 
             <div class="col-md-6">
                 <div class="h-30"></div>
                 <div class="h-7"></div>
-                <div class="panel panel-warning panel-border-0">
-                    <div class="panel-heading"><h4 class="panel-title">المستودع</h4></div>
+                <div class="card">
+                    <div class="card-header card-header-tabs card-header-primary">
+                        <div class="panel-heading"><h4 class="panel-title">المستودع</h4></div>
+                    </div>
                     <div class="panel-body">
 
                         <div class="row space-5">
@@ -458,8 +754,10 @@ add_page_info('title', 'جمعية المستقبل للمعوقين بحلب');
             <div class="col-md-6">
                 <div class="h-30"></div>
                 <div class="h-7"></div>
-                <div class="panel panel-success panel-border-0">
-                    <div class="panel-heading"><h4 class="panel-title">الوضع المالي</h4></div>
+                <div class="card">
+                    <div class="card-header card-header-warning">
+                        <div class="panel-heading"><h4 class="panel-title">الوضع المالي</h4></div>
+                    </div>
                     <div class="panel-body">
 
 

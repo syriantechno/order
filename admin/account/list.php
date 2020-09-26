@@ -58,12 +58,12 @@ if (til_is_mobile()) :
 endif;
 
 ?>
-
-    <div class="panel panel-default panel-table">
+<div class="card">
+    <div class="card-header card-header-tabs card-header-success" style="margin-bottom: 20px;">
 
         <div class="panel-heading hidden-xs">
 
-            <div class="row">
+
 
                 <div class="col-xs-6 col-md-6" style="display: flex">
 
@@ -94,6 +94,7 @@ endif;
 
                     </form>
                 </div>
+
                 <div class="col-xs-6 col-md-6">
                     <?php
                     if (!til_is_mobile()) :
@@ -188,6 +189,7 @@ endif;
                         </div>
                     </div>
                 </div>
+
             </div>
 
 

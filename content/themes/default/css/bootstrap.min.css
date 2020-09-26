@@ -2066,9 +2066,10 @@ th {
 text-align : right;
 }
 .table {
-width : 100%;
+width : 98%;
 max-width : 100%;
 margin-bottom : 20px;
+    margin: auto;
 }
 .table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
 padding : 8px;
@@ -4541,7 +4542,7 @@ color : inherit;
 margin-top : 0;
 margin-bottom : 0;
 font-size : 16px;
-color : inherit;
+color : #ffffff;
 }
 .panel-title > .small, .panel-title > .small > a, .panel-title > a, .panel-title > small, .panel-title > small > a {
 color : inherit;
