@@ -1,0 +1,978 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2c5ababa-2787-459c-b736-1dc01ab8e132" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/themes/default/sidebar.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1152">
+              <caret line="148" column="35" selection-start-line="121" selection-start-column="12" selection-end-line="148" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="864">
+              <caret line="108" column="31" selection-start-line="108" selection-start-column="31" selection-end-line="108" selection-end-column="31" />
+              <folding>
+                <element signature="n#style#0;n#i#0;n#div#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#small#0;n#div#0;n#span#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#div#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#div#0;n#a#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#div#0;n#a#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#div#0;n#a#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#div#0;n#a#0;n#div#0;n#div#5;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ultra.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6552">
+              <caret line="91" column="9" selection-start-line="91" selection-start-column="9" selection-end-line="91" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/themes/default/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="884">
+              <caret line="201" column="124" selection-start-line="200" selection-start-column="23" selection-end-line="201" selection-end-column="124" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/themes/default/css/app.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="785">
+              <caret line="2139" column="57" selection-start-line="2139" selection-start-column="57" selection-end-line="2139" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/themes/default/css/app-minan.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3096">
+              <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/themes/default/css/bootstrap.min.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="3756" selection-start-line="3756" selection-start-column="2" selection-end-line="3759" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>konulu mesaj</find>
+      <find>Çöp kutusuna taşı</find>
+      <find>tutarında para bulundu.</find>
+      <find>kasası güncellendi</find>
+      <find>Tarih</find>
+      <find>لا يمكن ترك حقل النص فارغا</find>
+      <find>ليرة لبنانية</find>
+      <find>توزيع</find>
+      <find>panel-heading hidden-xs</find>
+      <find>log</find>
+      <find>price4</find>
+      <find>highlight</find>
+      <find>list-group mobile-full list-group-dashboard</find>
+      <find>main</find>
+      <find>col-xs-16 col-md-15</find>
+      <find>style=&quot;margin: auto;&quot;</find>
+      <find>.loginbox</find>
+      <find>يحت</find>
+      <find>navbar-header</find>
+      <find>side</find>
+      <find>icon-bo</find>
+      <find>bod</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/admin/user/task/_sidebar.php" />
+        <option value="$PROJECT_DIR$/includes/input.php" />
+        <option value="$PROJECT_DIR$/admin/account/account.php" />
+        <option value="$PROJECT_DIR$/admin/account/detail.php" />
+        <option value="$PROJECT_DIR$/admin/account/tree.php" />
+        <option value="$PROJECT_DIR$/admin/form/export.php" />
+        <option value="$PROJECT_DIR$/admin/form/print.php" />
+        <option value="$PROJECT_DIR$/admin/form/print-invoice.php" />
+        <option value="$PROJECT_DIR$/admin/item/add.php" />
+        <option value="$PROJECT_DIR$/admin/item/detail.php" />
+        <option value="$PROJECT_DIR$/admin/item/export.php" />
+        <option value="$PROJECT_DIR$/admin/item/index.php" />
+        <option value="$PROJECT_DIR$/admin/item/print-barcode.php" />
+        <option value="$PROJECT_DIR$/admin/item/print-barcode_price.php" />
+        <option value="$PROJECT_DIR$/admin/item/print-statement.php" />
+        <option value="$PROJECT_DIR$/admin/payment/case.php" />
+        <option value="$PROJECT_DIR$/admin/payment/case/_add.php" />
+        <option value="$PROJECT_DIR$/admin/system/case/_detail.php" />
+        <option value="$PROJECT_DIR$/includes/case.php" />
+        <option value="$PROJECT_DIR$/admin/payment/detail1.php" />
+        <option value="$PROJECT_DIR$/admin/payment/detail2.php" />
+        <option value="$PROJECT_DIR$/admin/payment/detail.php" />
+        <option value="$PROJECT_DIR$/admin/account/index.php" />
+        <option value="$PROJECT_DIR$/admin/form/list.php" />
+        <option value="$PROJECT_DIR$/includes/helper.php" />
+        <option value="$PROJECT_DIR$/includes/form.php" />
+        <option value="$PROJECT_DIR$/admin/account/delete.php" />
+        <option value="$PROJECT_DIR$/admin/form/detail.php" />
+        <option value="$PROJECT_DIR$/admin/form/index.php" />
+        <option value="$PROJECT_DIR$/admin/user/task/index.php" />
+        <option value="$PROJECT_DIR$/ultra.php" />
+        <option value="$PROJECT_DIR$/admin/system/options/index.php" />
+        <option value="$PROJECT_DIR$/admin/account/list.php" />
+        <option value="$PROJECT_DIR$/login.php" />
+        <option value="$PROJECT_DIR$/installation.php" />
+        <option value="$PROJECT_DIR$/admin/_developer/colors.php" />
+        <option value="$PROJECT_DIR$/admin/_developer/alerts.php" />
+        <option value="$PROJECT_DIR$/admin/_developer/tabs.php" />
+        <option value="$PROJECT_DIR$/admin/_developer/panels.php" />
+        <option value="$PROJECT_DIR$/admin/_developer/helper.php" />
+        <option value="$PROJECT_DIR$/admin/_developer/general.php" />
+        <option value="$PROJECT_DIR$/admin/_developer/buttons.php" />
+        <option value="$PROJECT_DIR$/test.txt" />
+        <option value="$PROJECT_DIR$/admin/account/add.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/erp-config.php" />
+        <option value="$PROJECT_DIR$/content/themes/default/css/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/content/themes/default/header.php" />
+        <option value="$PROJECT_DIR$/content/themes/default/sidebar.php" />
+        <option value="$PROJECT_DIR$/content/themes/default/css/app.css" />
+        <option value="$PROJECT_DIR$/index.php" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="20" />
+    <option name="width" value="1910" />
+    <option name="height" value="980" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="order" type="b2602c69:ProjectViewProjectNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="order" type="b2602c69:ProjectViewProjectNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="order" type="b2602c69:ProjectViewProjectNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="order" type="b2602c69:ProjectViewProjectNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="order" type="b2602c69:ProjectViewProjectNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="default" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="order" type="b2602c69:ProjectViewProjectNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="default" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="order" type="b2602c69:ProjectViewProjectNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="default" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="adam" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Program Files\Ampps\www\adam\content\themes\default\img\login" />
+      <recent name="C:\Program Files\Ampps\www\adam\admin\payment" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="adam" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner directory="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.adam" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2c5ababa-2787-459c-b736-1dc01ab8e132" name="Default Changelist" comment="" />
+      <created>1600213101129</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600213101129</updated>
+      <workItem from="1600213102582" duration="7621000" />
+      <workItem from="1600220933653" duration="14637000" />
+      <workItem from="1600236452710" duration="6464000" />
+      <workItem from="1600243226941" duration="80000" />
+      <workItem from="1600243338504" duration="9312000" />
+      <workItem from="1600663385917" duration="482000" />
+      <workItem from="1600664436532" duration="1008000" />
+      <workItem from="1600665824054" duration="20000" />
+      <workItem from="1600666298620" duration="440000" />
+      <workItem from="1600781199895" duration="627000" />
+      <workItem from="1600789815867" duration="638000" />
+      <workItem from="1601008083738" duration="3986000" />
+      <workItem from="1601059974231" duration="1518000" />
+      <workItem from="1601082457783" duration="578000" />
+      <workItem from="1601083067840" duration="651000" />
+      <workItem from="1601085256789" duration="10980000" />
+    </task>
+    <task id="LOCAL-00001" summary="dasf">
+      <created>1600220142502</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1600220142502</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add 3">
+      <created>1600221600456</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1600221600456</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add 3">
+      <created>1600223753921</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1600223753921</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fixed msg list lang">
+      <created>1600225229417</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1600225229417</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fixed msg list lang">
+      <created>1600227351337</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1600227351337</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fixed msg list lang">
+      <created>1600231819696</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1600231819696</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fixed msg list lang">
+      <created>1600232904026</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1600232904026</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fixed msg list lang">
+      <created>1600233176656</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1600233176656</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fixed msg list lang">
+      <created>1600233289164</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1600233289164</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fixed msg list lang">
+      <created>1600235479282</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1600235479282</updated>
+    </task>
+    <task id="LOCAL-00011" summary="update text">
+      <created>1600235615677</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1600235615677</updated>
+    </task>
+    <task id="LOCAL-00012" summary="update add task">
+      <created>1600237959534</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1600237959535</updated>
+    </task>
+    <task id="LOCAL-00013" summary="update color table">
+      <created>1600242573670</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1600242573671</updated>
+    </task>
+    <task id="LOCAL-00014" summary="update color table">
+      <created>1600243529926</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1600243529928</updated>
+    </task>
+    <task id="LOCAL-00015" summary="update color table">
+      <created>1600244552495</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1600244552495</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add login page">
+      <created>1600249633622</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1600249633622</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add login page">
+      <created>1600251532119</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1600251532119</updated>
+    </task>
+    <task id="LOCAL-00018" summary="add test">
+      <created>1600265448069</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1600265448069</updated>
+    </task>
+    <task id="LOCAL-00019" summary="add test">
+      <created>1600266060162</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1600266060162</updated>
+    </task>
+    <task id="LOCAL-00020" summary="add test">
+      <created>1600266359664</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1600266359664</updated>
+    </task>
+    <task id="LOCAL-00021" summary="add test">
+      <created>1600266491633</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1600266491633</updated>
+    </task>
+    <task id="LOCAL-00022" summary="add test">
+      <created>1600663431637</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1600663431637</updated>
+    </task>
+    <task id="LOCAL-00023" summary="from linux">
+      <created>1600663483663</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1600663483663</updated>
+    </task>
+    <task id="LOCAL-00024" summary="fixed installation">
+      <created>1600664617796</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1600664617796</updated>
+    </task>
+    <task id="LOCAL-00025" summary="fixed installation">
+      <created>1600665145071</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1600665145071</updated>
+    </task>
+    <task id="LOCAL-00026" summary="fixed installation">
+      <created>1600665354115</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1600665354115</updated>
+    </task>
+    <task id="LOCAL-00027" summary="fixed installation">
+      <created>1600666317116</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1600666317116</updated>
+    </task>
+    <task id="LOCAL-00028" summary="fixed installation">
+      <created>1601024708180</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1601024708180</updated>
+    </task>
+    <task id="LOCAL-00029" summary="add damdmom text">
+      <created>1601060015304</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1601060015304</updated>
+    </task>
+    <task id="LOCAL-00030" summary="change needsomeone">
+      <created>1601060180948</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1601060180948</updated>
+    </task>
+    <task id="LOCAL-00031" summary="change needsomeone">
+      <created>1601060402331</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1601060402331</updated>
+    </task>
+    <task id="LOCAL-00032" summary="change needsomeone">
+      <created>1601082881943</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1601082881944</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="59042000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="58" width="3840" height="1968" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49780703" visible="true" weight="0.21428572" />
+      <window_info id="Structure" order="1" sideWeight="0.502193" side_tool="true" weight="0.18993288" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3291815" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32799524" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32941177" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="dasf" />
+    <MESSAGE value="add 3" />
+    <MESSAGE value="fixed msg list lang" />
+    <MESSAGE value="update text" />
+    <MESSAGE value="update add task" />
+    <MESSAGE value="update color table" />
+    <MESSAGE value="add login page" />
+    <MESSAGE value="add test" />
+    <MESSAGE value="from linux" />
+    <MESSAGE value="fixed installation" />
+    <MESSAGE value="add damdmom text" />
+    <MESSAGE value="change needsomeone" />
+    <option name="LAST_COMMIT_MESSAGE" value="change needsomeone" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/admin/payment/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4121" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/payment/print.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5345" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/payment/case/_add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-823">
+          <caret line="137" column="59" selection-start-line="137" selection-start-column="59" selection-end-line="137" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/input.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="84" column="60" selection-start-line="84" selection-start-column="60" selection-end-line="84" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/payment/detail2.php" />
+    <entry file="file://$PROJECT_DIR$/includes/case.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="475" column="5" lean-forward="true" selection-start-line="475" selection-start-column="5" selection-end-line="475" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/system/case/_detail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="104" column="38" selection-start-line="104" selection-start-column="38" selection-end-line="104" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/account/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="426" column="23" selection-start-line="426" selection-start-column="23" selection-end-line="426" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/payment/list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1843" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="776" column="63" selection-start-line="776" selection-start-column="63" selection-end-line="776" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/form/list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="66" column="79" lean-forward="true" selection-start-line="66" selection-start-column="79" selection-end-line="66" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/account/delete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="26" column="61" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="61" />
+          <folding>
+            <element signature="e#8001#15330#0#HTML" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/payment/detail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="612" column="22" selection-start-line="608" selection-start-column="4" selection-end-line="612" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/form/detail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29376">
+          <caret line="864" column="42" selection-start-line="864" selection-start-column="42" selection-end-line="864" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/system/options/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="155" selection-start-line="155" selection-end-line="155" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/themes/default/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/user/task/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="12" column="68" selection-start-line="12" selection-start-column="68" selection-end-line="12" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/form/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="98" column="71" selection-start-line="98" selection-start-column="28" selection-end-line="98" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/account/account.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/account/list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18072">
+          <caret line="251" column="28" selection-start-line="251" selection-start-column="28" selection-end-line="251" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/system/backup/BackUp.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/system/backup/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4248">
+          <caret line="59" column="39" selection-start-line="59" selection-start-column="39" selection-end-line="59" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detail.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1429">
+          <caret line="393" column="16" selection-start-line="393" selection-start-column="16" selection-end-line="393" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/_developer/colors.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/_developer/alerts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1429">
+          <caret line="143" column="58" selection-start-line="143" selection-start-column="58" selection-end-line="143" selection-end-column="58" />
+          <folding>
+            <element signature="e#5397#5401#0#HTML" expanded="true" />
+            <element signature="e#5563#5567#1#HTML" expanded="true" />
+            <element signature="e#5631#5635#0#HTML" expanded="true" />
+            <element signature="e#5639#5643#0#HTML" expanded="true" />
+            <element signature="e#5668#5672#0#HTML" expanded="true" />
+            <element signature="e#5836#5840#1#HTML" expanded="true" />
+            <element signature="e#5904#5908#0#HTML" expanded="true" />
+            <element signature="e#5912#5916#0#HTML" expanded="true" />
+            <element signature="e#5941#5945#0#HTML" expanded="true" />
+            <element signature="e#6107#6111#1#HTML" expanded="true" />
+            <element signature="e#6175#6179#0#HTML" expanded="true" />
+            <element signature="e#6183#6187#0#HTML" expanded="true" />
+            <element signature="e#6212#6216#0#HTML" expanded="true" />
+            <element signature="e#6377#6381#1#HTML" expanded="true" />
+            <element signature="e#6444#6448#0#HTML" expanded="true" />
+            <element signature="e#6452#6456#0#HTML" expanded="true" />
+            <element signature="e#6481#6485#0#HTML" expanded="true" />
+            <element signature="e#6647#6651#1#HTML" expanded="true" />
+            <element signature="e#6715#6719#0#HTML" expanded="true" />
+            <element signature="e#6723#6727#0#HTML" expanded="true" />
+            <element signature="e#6752#6756#0#HTML" expanded="true" />
+            <element signature="e#6915#6919#1#HTML" expanded="true" />
+            <element signature="e#6980#6984#0#HTML" expanded="true" />
+            <element signature="e#6988#6992#0#HTML" expanded="true" />
+            <element signature="e#7017#7021#0#HTML" expanded="true" />
+            <element signature="e#7181#7185#1#HTML" expanded="true" />
+            <element signature="e#7247#7251#0#HTML" expanded="true" />
+            <element signature="e#7255#7259#0#HTML" expanded="true" />
+            <element signature="e#7284#7288#0#HTML" expanded="true" />
+            <element signature="e#7447#7451#1#HTML" expanded="true" />
+            <element signature="e#7514#7518#0#HTML" expanded="true" />
+            <element signature="e#7522#7526#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/_developer/tabs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/_developer/typography.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/_developer/panels.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/_developer/icons.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/_developer/helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/_developer/grid.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/_developer/general.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/_developer/form.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/_developer/buttons.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/_developer/_header.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/_developer/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp-config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/installation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="81" column="77" selection-start-line="81" selection-start-column="34" selection-end-line="81" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/account/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1429">
+          <caret line="199" column="69" selection-start-line="199" selection-start-column="69" selection-end-line="199" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ultra.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6552">
+          <caret line="91" column="9" selection-start-line="91" selection-start-column="9" selection-end-line="91" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/themes/default/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="3756" selection-start-line="3756" selection-start-column="2" selection-end-line="3759" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/themes/default/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="201" column="124" selection-start-line="200" selection-start-column="23" selection-end-line="201" selection-end-column="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/themes/default/css/app-minan.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3096">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/themes/default/sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1152">
+          <caret line="148" column="35" selection-start-line="121" selection-start-column="12" selection-end-line="148" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/themes/default/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="785">
+          <caret line="2139" column="57" selection-start-line="2139" selection-start-column="57" selection-end-line="2139" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="108" column="31" selection-start-line="108" selection-start-column="31" selection-end-line="108" selection-end-column="31" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#div#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#span#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#a#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#a#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#a#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#a#0;n#div#0;n#div#5;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
