@@ -1,5 +1,5 @@
 <?php include('ultra.php'); ?>
-<?php get_header(); ?>
+<?php get_header_success(); ?>
 <?php
 add_page_info('title', 'order delivery');
 ?>
@@ -554,10 +554,7 @@ add_page_info('title', 'order delivery');
 
     </div>
 </div>
-<div id="btnContainer">
-    <button class=" btn btn-icon" onclick="listView()"><i class="fa fa-bars"></i> List</button>
-    <button class=" btn btn-icon active" onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
-</div>
+
 <div class="h-10"></div>
 <div class="row space-6" style="padding-right: 15px; padding-left: 15px;">
 
@@ -566,11 +563,11 @@ add_page_info('title', 'order delivery');
 
     <?php if ($form_status_all = get_form_status_all('0')): ?>
         <div>
-            <div class="list-group mobile-full list-group-dashboard" style="width: 100%;">
+            <div class="list-group mobile-full list-group-dashboard" style="width: 98%;">
                 <?php foreach ($form_status_all as $key => $status): ?>
                     <a href="admin/form/list.php?status_id=<?php echo $status->id; ?>"
                        class="list-group-item-column"
-                       style="border-left:25px solid <?php echo $status->bg_color; ?>; width: 50%">
+                       style=" border-radius: 5px; border-left:25px solid <?php echo $status->bg_color; ?>; width: 48% " >
                         <?php echo $status->name; ?>
                         <?php if ($status->is_default == 'default'): ?>
                             <small class="text-muted">(افتراضي)</small><?php endif; ?>

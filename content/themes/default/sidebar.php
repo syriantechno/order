@@ -1,17 +1,18 @@
 <aside>
-<!--    <div class="sideuser"></div>-->
-<!--    <div class="avataruser">-->
-<!---->
-<!--        <img src="--><?php //active_user('avatar'); ?><!--" class="img-repsonsive img-avatar"-->
-<!--             style="border-radius: 50%; width: 100px;     border: 1px solid #000000;" alt="">-->
-<!--        <span class="user-name1">--><?php //active_user('username'); ?><!--</span>-->
-<!--        <span class="user-role1">--><?php //echo get_user_role_text(get_active_user('role')); ?><!--</span>-->
-<!---->
-<!--    </div>-->
+
 <!--    <div class="sidebar1"></div>-->
 
-    <div class="sidebar">
-<!--        <img src="content/themes/default/img/sidebar-1.jpg " alt="">-->
+    <div class="card">
+<!--        <div class="sideuser"></div>-->
+        <div class="avataruser">
+
+            <img src="<?php active_user('avatar'); ?>" class="img-repsonsive img-avatar"
+                 style="border-radius: 50%; width: 100px;     border: 1px solid #000000;" alt="">
+            <span class="user-name1"><?php active_user('username'); ?></span>
+            <span class="user-role1"><?php echo get_user_role_text(get_active_user('role')); ?></span>
+
+        </div>
+
         <h3 class="sidebar-title ff-1">القائمة الرئيسية</h3>
 
         <ul class="sidebar-menu ff-1">
@@ -184,12 +185,12 @@
     aside {
         width: 251px;
         bottom: 0;
-        top: 71px;
-        right: 0;
+        top: 5px;
+        right: 5px;
         direction: rtl;
-        /*overflow-y: scroll;*/
+        overflow-y: scroll;
         position: fixed;
-        /*overflow-x: hidden;*/
+        overflow-x: hidden;
         padding-top: 71px;
     }
 

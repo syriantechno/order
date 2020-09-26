@@ -97,19 +97,19 @@ sure_baslat();
     <script src="<?php echo template_url('js/til-switch.js'); ?>"></script>
 
     <style>
-        /*body {*/
-            /*margin-top: 71px;*/
-        /*}*/
+        body {
+            margin-top: 71px;
+        }
 
-        /*header {*/
-            /*position: fixed;*/
-            /*top: 0;*/
-            /*left: 0;*/
-            /*right: 0;*/
-            /*width: 100%;*/
-            /*height: 71px;*/
-            /*z-index: 99999999999;*/
-        /*}*/
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 71px;
+            z-index: 99999999999;
+        }
     </style>
 
 </head>

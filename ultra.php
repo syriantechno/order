@@ -97,6 +97,10 @@ function get_header_blue()
 {
     include get_root_path('content/themes/default/header-blue.php');
 }
+function get_header_success()
+{
+    include get_root_path('content/themes/default/header-success.php');
+}
 /**
  * title: get_footer()
  * desc: footer.php dosyas?n? include eder.
