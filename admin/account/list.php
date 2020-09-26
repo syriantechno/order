@@ -59,7 +59,7 @@ endif;
 
 ?>
 <div class="card">
-    <div class="card-header card-header-tabs card-header-success" style="margin-bottom: 20px;">
+    <div class="card-header card-header-tabs card-header-blue" style="margin-bottom: 20px;">
 
         <div class="panel-heading hidden-xs">
 

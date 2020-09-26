@@ -239,12 +239,12 @@ add_page_info('title', 'order delivery');
                 $chart['options']['legend']['position'] = 'bottom';
                 $chart['options']['scales']['yAxes'][0]['display'] = true;
                 $chart['options']['scales']['yAxes'][0]['position'] = 'left';
-                $chart['options']['scales']['yAxes'][0]['ticks']['userCallback'] = "=TIL= function(value, index, values) { return value.formatMoney(2, '.', ',') + ' قطعة';  } =TIL=";
+                $chart['options']['scales']['yAxes'][0]['ticks']['userCallback'] = "=TIL= function(value, index, values) { return value.formatMoney(2, '.', ',') + ' ';  } =TIL=";
                 $chart['options']['scales']['xAxes'][0]['display'] = false;
                 $chart['options']['scales']['xAxes'][0]['ticks']['beginAtZero'] = true;
                 $chart['options']['maintainAspectRatio'] = false;
                 $chart['options']['tooltips']['enabled'] = true;
-                $chart['options']['tooltips']['callbacks']['label'] = "=TIL= function(tooltipItems, data) { return ' '+tooltipItems.yLabel.formatMoney(2, '.', ',') + ' قطعة'; } =TIL=";
+                $chart['options']['tooltips']['callbacks']['label'] = "=TIL= function(tooltipItems, data) { return ' '+tooltipItems.yLabel.formatMoney(2, '.', ',') + ' '; } =TIL=";
                 $chart['options']['tooltips']['callbacks']['title'] = "=TIL= function(tooltipItems, data) { console.log(tooltipItems);  console.log(data); return tooltipItems[0].xLabel +' : '+ data.datasets[tooltipItems[0].datasetIndex].label; } =TIL=";
 
 
@@ -381,12 +381,12 @@ add_page_info('title', 'order delivery');
                 $chart['options']['legend']['position'] = 'bottom';
                 $chart['options']['scales']['yAxes'][0]['display'] = true;
                 $chart['options']['scales']['yAxes'][0]['position'] = 'left';
-                $chart['options']['scales']['yAxes'][0]['ticks']['userCallback'] = "=TIL= function(value, index, values) { return value.formatMoney(2, '.', ',') + ' قطعة';  } =TIL=";
+                $chart['options']['scales']['yAxes'][0]['ticks']['userCallback'] = "=TIL= function(value, index, values) { return value.formatMoney(2, '.', ',') + ' ';  } =TIL=";
                 $chart['options']['scales']['xAxes'][0]['display'] = false;
                 $chart['options']['scales']['xAxes'][0]['ticks']['beginAtZero'] = true;
                 $chart['options']['maintainAspectRatio'] = false;
                 $chart['options']['tooltips']['enabled'] = true;
-                $chart['options']['tooltips']['callbacks']['label'] = "=TIL= function(tooltipItems, data) { return ' '+tooltipItems.yLabel.formatMoney(2, '.', ',') + ' قطعة'; } =TIL=";
+                $chart['options']['tooltips']['callbacks']['label'] = "=TIL= function(tooltipItems, data) { return ' '+tooltipItems.yLabel.formatMoney(2, '.', ',') + ' '; } =TIL=";
                 $chart['options']['tooltips']['callbacks']['title'] = "=TIL= function(tooltipItems, data) { console.log(tooltipItems);  console.log(data); return tooltipItems[0].xLabel +' : '+ data.datasets[tooltipItems[0].datasetIndex].label; } =TIL=";
 
 
@@ -523,12 +523,12 @@ add_page_info('title', 'order delivery');
                 $chart['options']['legend']['position'] = 'bottom';
                 $chart['options']['scales']['yAxes'][0]['display'] = true;
                 $chart['options']['scales']['yAxes'][0]['position'] = 'left';
-                $chart['options']['scales']['yAxes'][0]['ticks']['userCallback'] = "=TIL= function(value, index, values) { return value.formatMoney(2, '.', ',') + ' قطعة';  } =TIL=";
+                $chart['options']['scales']['yAxes'][0]['ticks']['userCallback'] = "=TIL= function(value, index, values) { return value.formatMoney(2, '.', ',') + ' ';  } =TIL=";
                 $chart['options']['scales']['xAxes'][0]['display'] = false;
                 $chart['options']['scales']['xAxes'][0]['ticks']['beginAtZero'] = true;
                 $chart['options']['maintainAspectRatio'] = false;
                 $chart['options']['tooltips']['enabled'] = true;
-                $chart['options']['tooltips']['callbacks']['label'] = "=TIL= function(tooltipItems, data) { return ' '+tooltipItems.yLabel.formatMoney(2, '.', ',') + ' قطعة'; } =TIL=";
+                $chart['options']['tooltips']['callbacks']['label'] = "=TIL= function(tooltipItems, data) { return ' '+tooltipItems.yLabel.formatMoney(2, '.', ',') + ''; } =TIL=";
                 $chart['options']['tooltips']['callbacks']['title'] = "=TIL= function(tooltipItems, data) { console.log(tooltipItems);  console.log(data); return tooltipItems[0].xLabel +' : '+ data.datasets[tooltipItems[0].datasetIndex].label; } =TIL=";
 
 
@@ -546,6 +546,7 @@ add_page_info('title', 'order delivery');
                     <i class="fa fa-facebook"></i>
                 </div>
             </div>
+            <br>
             <div class="stats-desc">إضافة صناديق وبنوك</div>
         </div>
 
@@ -589,7 +590,7 @@ add_page_info('title', 'order delivery');
         <?php $query = db()->query("SELECT * FROM " . dbname('forms') . " WHERE status='1' AND type='form' AND in_out='0' ORDER BY date DESC LIMIT 50"); ?>
         <?php if ($query->num_rows): ?>
 <div class="card">
-    <div class="card-header card-header-tabs card-header-primary">
+    <div class="card-header card-header-tabs card-header-blue">
         <div class="panel-heading"><h4 class="panel-title"><i class="fa fa-file-o text-white"></i>  اخر 50 حركة</h4></div>
     </div>
                 <div class="panel-body" style="height:280px; overflow: auto;">

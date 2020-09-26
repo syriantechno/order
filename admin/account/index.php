@@ -1,5 +1,5 @@
 <?php include('../../ultra.php'); ?>
-<?php get_header(); ?>
+<?php get_header_blue(); ?>
 <?php
 add_page_info('title', 'بطاقات المستفيد');
 add_page_info('nav', array('name' => 'بطاقات المستفيد'));
@@ -8,47 +8,55 @@ add_page_info('nav', array('name' => 'بطاقات المستفيد'));
 
     <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-
             <div class="row space-5">
                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                     <div class="box-menu">
                         <a href="<?php site_url('admin/account/add.php'); ?>">
-						<span class="icon-box1">
-                            <div class="stats-title">إضافة مستفيد</div>
-                            <i class="faw fa-plus-square-o" style="color: rgba(255, 255, 255, 0.4117647058823529);"></i>
-                            <hr>
-                            <div class="stats-desc">إضافة مستفيد جديد</div>
-                           
-                        </span>
-
+                            <div class="card-icon">
+                                <i class="faw fa-users" style="color: #ffffff; font-size: 45px; "></i>
+                            </div>
+                             <span class="icon-box1">
+                                 <div class="stats-title">اضافة حساب<small class="text-muted" style="color: #ffffff">(<?php echo $accounts->num_rows; ?>)</small></div>
+                                 <br>
+                                 <br>
+                                 <hr>
+                                 <div class="stats-desc">إضافة حساب جديد</div>
+                             </span>
                         </a>
-                    </div>
+                    </div> <!-- /.box-menu -->
                 </div>
+
                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                     <div class="box-menu">
                         <a href="<?php site_url('admin/account/list.php'); ?>">
-						<span class="icon-box1">
-                            <div class="stats-title">كل المستفيدين</div>
-                            <i class="faw fa-list" style="color: rgba(255, 255, 255, 0.4117647058823529);"></i>
-                            <hr>
-                            <div class="stats-desc">تعديل وحذف وكشف مستفيد</div>
-                        </span>
-
+                            <div class="card-icon">
+                                <i class="faw fa-users" style="color: #ffffff; font-size: 45px; "></i>
+                            </div>
+                            <span class="icon-box1">
+                                 <div class="stats-title">اضافة حساب<small class="text-muted" style="color: #ffffff">(<?php echo $accounts->num_rows; ?>)</small></div>
+                                 <br>
+                                 <br>
+                                 <hr>
+                                 <div class="stats-desc">إضافة حساب جديد</div>
+                             </span>
                         </a>
-                    </div>
+                    </div> <!-- /.box-menu -->
                 </div>
                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                     <div class="box-menu">
-                        <a href="<?php site_url('admin/account/add.php?accoutcode=Officer'); ?>">
-						<span class="icon-box1">
-                            <div class="stats-title">اضافة حساب عام</div>
-                            <i class="faw fa-plus-square-o" style="color: rgba(255, 255, 255, 0.4117647058823529);"></i>
-                            <hr>
-                            <div class="stats-desc">موظفين - مصاريف نثرية - الخ</div>
-                        </span>
-
+                        <a href="<?php site_url('admin/account/add.php'); ?>">
+                            <div class="card-icon">
+                                <i class="faw fa-users" style="color: #ffffff; font-size: 45px; "></i>
+                            </div>
+                            <span class="icon-box1">
+                                 <div class="stats-title">اضافة حساب<small class="text-muted" style="color: #ffffff">(<?php echo $accounts->num_rows; ?>)</small></div>
+                                 <br>
+                                 <br>
+                                 <hr>
+                                 <div class="stats-desc">إضافة حساب جديد</div>
+                             </span>
                         </a>
-                    </div>
+                    </div> <!-- /.box-menu -->
                 </div>
                 <!--<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                 <div class="box-menu">
@@ -248,10 +256,12 @@ add_page_info('nav', array('name' => 'بطاقات المستفيد'));
 
     <div class="row">
         <div class="col-md-4">
-
-            <small class="text-muted module-title-small"><i class="fa fa-trophy"></i> اخر 50 مستفيد ذكر</small>
+    <div class="card">
+        <div class="card-header card-header-tabs card-header-blue">
+            <h4 class="panel-title"><i class="fa fa-trophy"></i> اخر 50 مستفيد ذكر</h4>
             <div class="h-10"></div>
-            <div class="panel panel-info panel-table panel-heading-0 panel-border-right panel-dashboard-list">
+        </div>
+            <div class="panel-dashboard-list" style="height: 280px; height: 280px; overflow-x: hidden;overflow-y: scroll;">
                 <div class="panel-body">
                     <div class="panel-list">
                         <?php $query = db()->query(
@@ -283,12 +293,14 @@ add_page_info('nav', array('name' => 'بطاقات المستفيد'));
             </div>
 
         </div>
+        </div>
         <div class="col-md-4">
-
-            <small class="text-muted module-title-small"><i class="fa fa-th-list"></i> اخر 50 مستفيدة انثى</small>
+            <div class="card">
+            <div class="card-header card-header-tabs card-header-primary">
+            <h4 class="panel-title"><i class="fa fa-th-list"></i> اخر 50 مستفيدة انثى</h4>
             <div class="h-10"></div>
-
-            <div class="panel panel-warning panel-table panel-heading-0 panel-border-right panel-dashboard-list">
+            </div>
+                <div class="panel-dashboard-list" style="height: 280px; height: 280px; overflow-x: hidden; overflow-y: scroll;">
                 <div class="panel-body">
                     <div class="panel-list">
                         <?php $query = db()->query(
@@ -318,7 +330,7 @@ add_page_info('nav', array('name' => 'بطاقات المستفيد'));
                     </div>
                 </div>
             </div>
-
+            </div>
         </div>
         <div class="col-md-4">
 
@@ -378,10 +390,12 @@ add_page_info('nav', array('name' => 'بطاقات المستفيد'));
 
     <div class="row">
         <div class="col-md-8 hidden-xs">
-
-            <small class="text-muted module-title-small"><i class="fa fa-th-list"></i> الحسابات الختامية</small>
-            <div class="h-10"></div>
-            <div class="panel panel-warning panel-table panel-heading-0 panel-border-right panel-dashboard-list">
+            <div class="card">
+                <div class="card-header card-header-tabs card-header-warning">
+                    <h4 class="panel-title"><i class="fa fa-th-list"></i>الحسابات الختامية</h4>
+                    <div class="h-10"></div>
+                </div>
+                <div class="panel-dashboard-list" style="height: 280px; height: 280px; overflow-x: hidden; overflow-y: scroll;">
                 <div class="panel-body">
                     <div class="panel-list">
                         <?php $query = db()->query("SELECT * FROM " . dbname('forms') . " WHERE status='1' AND type IN ('form', 'payment') AND account_id > 0 ORDER BY date DESC LIMIT 50 "); ?>
@@ -441,7 +455,7 @@ add_page_info('nav', array('name' => 'بطاقات المستفيد'));
                     </div>
                 </div>
             </div>
-
+            </div>
         </div>
         <div class="col-md-4">
 

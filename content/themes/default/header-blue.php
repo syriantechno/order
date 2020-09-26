@@ -185,7 +185,7 @@ sure_baslat();
 
 
     <?php else: ?>
-        <nav class="navbar navbar-masthead navbar-default">
+        <nav class="navbar navbar-masthead navbar-default-blue">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
