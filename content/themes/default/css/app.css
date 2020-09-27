@@ -1122,10 +1122,36 @@ header .navbar-default-success {
     width: 99.6%;
     margin: auto;
     margin-bottom: 0;
-    background: linear-gradient(60deg, #26c6da, #00acc1);
+    background: linear-gradient(60deg, #a8e8ab, #43a047);
 
 }
+header .navbar-default-warning {
 
+    border-radius: 5px;
+    width: 99.6%;
+    margin: auto;
+    margin-bottom: 0;
+    background: linear-gradient(60deg, #f1cc97, #fb8c00);
+
+}
+header .navbar-default-main {
+
+    border-radius: 5px;
+    width: 99.6%;
+    margin: auto;
+    margin-bottom: 0;
+    background: linear-gradient(60deg, #7abbf3, #1e3799);
+
+}
+header .navbar-default-primary {
+
+    border-radius: 5px;
+    width: 99.6%;
+    margin: auto;
+    margin-bottom: 0;
+    background: linear-gradient(60deg, #eeacf9, #8e24aa);
+
+}
 header .navbar-brand {
     width: 250px;
     padding: 5px;
@@ -2635,11 +2661,10 @@ ul.sidebar-menu li a {
 ul.sidebar-menu li a:hover, ul.sidebar-menu li a:focus, ul.sidebar-menu li a:focus-within {
 
     text-decoration: none;
-    background: none repeat scroll 0 0 #2C3E50;
-    background-image: url(../img/bg.png);
-    color: #f5f5f5;
-
-
+    background-color: #ff9800;
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(255, 152, 0, 0.4);
+    border-radius: 5px ;
+color: #ffffff;
 }
 
 .active1 {
@@ -3275,7 +3300,7 @@ footer {
     padding: 8px;
 
 
-    margin: -13px 15px 0;
+    margin: -20px 15px 0;
 
     position: relative;
 }

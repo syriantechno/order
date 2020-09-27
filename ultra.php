@@ -101,6 +101,18 @@ function get_header_success()
 {
     include get_root_path('content/themes/default/header-success.php');
 }
+function get_header_warning()
+{
+    include get_root_path('content/themes/default/header-warning.php');
+}
+function get_header_main()
+{
+    include get_root_path('content/themes/default/header-main.php');
+}
+function get_header_primary()
+{
+    include get_root_path('content/themes/default/header-primary.php');
+}
 /**
  * title: get_footer()
  * desc: footer.php dosyas?n? include eder.

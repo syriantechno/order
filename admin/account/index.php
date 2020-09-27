@@ -1,5 +1,5 @@
 <?php include('../../ultra.php'); ?>
-<?php get_header_blue(); ?>
+<?php get_header_warning(); ?>
 <?php
 add_page_info('title', 'بطاقات المستفيد');
 add_page_info('nav', array('name' => 'بطاقات المستفيد'));
@@ -13,7 +13,7 @@ add_page_info('nav', array('name' => 'بطاقات المستفيد'));
                     <div class="box-menu">
                         <a href="<?php site_url('admin/account/add.php'); ?>">
                             <div class="card-icon">
-                                <i class="faw fa-users" style="color: #ffffff; font-size: 45px; "></i>
+                                <i class="faw fa-plus-square-o" style="color: #ffffff; font-size: 45px; "></i>
                             </div>
                              <span class="icon-box1">
                                  <div class="stats-title">اضافة حساب<small class="text-muted" style="color: #ffffff">(<?php echo $accounts->num_rows; ?>)</small></div>
@@ -30,14 +30,14 @@ add_page_info('nav', array('name' => 'بطاقات المستفيد'));
                     <div class="box-menu">
                         <a href="<?php site_url('admin/account/list.php'); ?>">
                             <div class="card-icon">
-                                <i class="faw fa-users" style="color: #ffffff; font-size: 45px; "></i>
+                                <i class="faw fa-list" style="color: #ffffff; font-size: 45px; "></i>
                             </div>
                             <span class="icon-box1">
-                                 <div class="stats-title">اضافة حساب<small class="text-muted" style="color: #ffffff">(<?php echo $accounts->num_rows; ?>)</small></div>
+                                 <div class="stats-title">قائمة الزبائن<small class="text-muted" style="color: #ffffff">(<?php echo $accounts->num_rows; ?>)</small></div>
                                  <br>
                                  <br>
                                  <hr>
-                                 <div class="stats-desc">إضافة حساب جديد</div>
+                                 <div class="stats-desc">عرض جميع الزبائن</div>
                              </span>
                         </a>
                     </div> <!-- /.box-menu -->
@@ -46,14 +46,14 @@ add_page_info('nav', array('name' => 'بطاقات المستفيد'));
                     <div class="box-menu">
                         <a href="<?php site_url('admin/account/add.php'); ?>">
                             <div class="card-icon">
-                                <i class="faw fa-users" style="color: #ffffff; font-size: 45px; "></i>
+                                <i class="faw fa-plus-square-o" style="color: #ffffff; font-size: 45px; "></i>
                             </div>
                             <span class="icon-box1">
-                                 <div class="stats-title">اضافة حساب<small class="text-muted" style="color: #ffffff">(<?php echo $accounts->num_rows; ?>)</small></div>
+                                 <div class="stats-title">حساب عام<small class="text-muted" style="color: #ffffff">(<?php echo $accounts->num_rows; ?>)</small></div>
                                  <br>
                                  <br>
                                  <hr>
-                                 <div class="stats-desc">إضافة حساب جديد</div>
+                                 <div class="stats-desc">إضافة حساب عام</div>
                              </span>
                         </a>
                     </div> <!-- /.box-menu -->
@@ -391,7 +391,7 @@ add_page_info('nav', array('name' => 'بطاقات المستفيد'));
     <div class="row">
         <div class="col-md-8 hidden-xs">
             <div class="card">
-                <div class="card-header card-header-tabs card-header-warning">
+                <div class="card-header card-header-tabs card-header-success">
                     <h4 class="panel-title"><i class="fa fa-th-list"></i>الحسابات الختامية</h4>
                     <div class="h-10"></div>
                 </div>

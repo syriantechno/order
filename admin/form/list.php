@@ -1,6 +1,6 @@
 <?php include('../../ultra.php'); ?>
 <?php include_content_page('list', false, 'form'); ?>
-<?php get_header(); ?>
+<?php get_header_primary(); ?>
 <?php
 add_page_info('title', 'قائمة التوزيع');
 add_page_info('nav', array('name' => 'إدارة التوزيع', 'url' => get_site_url('admin/form/')));
@@ -89,7 +89,8 @@ $forms = get_forms(array('_GET' => true)); ?>
 
     </div> <!-- /.panel -->
 <?php else: ?>
-    <div class="panel panel-default panel-table">
+<div class="card">
+    <div class="card-header card-header-tabs card-header-primary" style="margin-bottom: 20px;">
         <div class="panel-heading">
             <div class="row">
                 <div class="col-md-6" style="display: flex">
@@ -187,7 +188,7 @@ $forms = get_forms(array('_GET' => true)); ?>
                 </div> <!-- /.col-md-6 -->
             </div> <!-- /.row -->
         </div> <!-- /.panel-heading -->
-
+    </div>
         <?php if ($forms): ?>
             <table class="table table-hover table-bordered table-condensed table-striped">
                 <thead>

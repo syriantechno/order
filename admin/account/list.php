@@ -58,7 +58,7 @@ if (til_is_mobile()) :
 endif;
 
 ?>
-<div class="card">
+<div class="card" style="top: 25px;">
     <div class="card-header card-header-tabs card-header-blue" style="margin-bottom: 20px;">
 
         <div class="panel-heading hidden-xs">

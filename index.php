@@ -1,5 +1,5 @@
 <?php include('ultra.php'); ?>
-<?php get_header_success(); ?>
+<?php get_header_main(); ?>
 <?php
 add_page_info('title', 'order delivery');
 ?>
@@ -841,12 +841,15 @@ add_page_info('title', 'order delivery');
 
             </div>
         </div>
-
+        <div class="h-40"></div>
         <div class="h-20"></div>
-        <small class="text-muted"><i class="fa fa-tasks fs-12"></i> قائمة المهام</small>
-        <div class="h-10"></div>
+        <div class="card">
+            <div class="card-header card-header-tabs card-header-success">
+                <div class="panel-heading"><h4 class="panel-title"><i class="fa fa-file-o text-white"></i> قائمة المهام</h4></div>
+            </div>
+
         <?php if ($tasks = get_tasks(array('query' => _get_query_task('inbox')))): ?>
-            <div class="panel panel-purble panel-heading-0 panel-border-right panel-table">
+            <div class="panel-dashboard-list" style="height: 280px; height: 280px; overflow-x: hidden; overflow-y: scroll;">
                 <div class="panel-body" style="height:280px; overflow: auto;">
                     <table class="table table-hover table-condensed table-striped">
                         <tbody>
@@ -912,7 +915,7 @@ add_page_info('title', 'order delivery');
 
         <?php endif; ?>
 
-
+        </div>
     </div>
 </div>
 <script>

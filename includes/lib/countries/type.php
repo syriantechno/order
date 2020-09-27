@@ -1,7 +1,7 @@
 <?php
 
 $types = [
-    "اعاقة" => 'Retardation',
+    "زبون" => 'Customer',
     "موظفين" => 'Officer',
     "مصاريف" => 'Expenses',
     "نشاطات" => 'Activities',

@@ -1,5 +1,5 @@
 <?php include('../../ultra.php'); ?>
-<?php get_header(); ?>
+<?php get_header_success(); ?>
 <?php
 add_page_info('title', 'المواد');
 add_page_info('nav', array('name' => 'المواد'));
@@ -12,32 +12,40 @@ add_page_info('nav', array('name' => 'المواد'));
             <div class="row space-5">
                 <?php if (user_access('admin')): ?>
                     <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <div class="box-menu">
-                        <a href="<?php site_url('admin/item/add.php'); ?>">
-						<span class="icon-box2">
-                            <div class="stats-title">إضافة معونة</div>
-                            <i class="faw fa-plus-square-o" style="color: rgba(255, 255, 255, 0.4117647058823529);"></i>
-                             <hr>
-                            <div class="stats-desc">إضافة معونة جديدة</div>
-                        </span>
-
-                        </a>
-                    </div> <!-- /.box-menu -->
-                    </div><?php endif; ?> <!-- /.col-* -->
+                        <div class="box-menu">
+                            <a href="<?php site_url('admin/item/add.php'); ?>">
+                                <div class="card-icon1">
+                                    <i class="faw fa-cubes" style="color: #ffffff; font-size: 45px; "></i>
+                                </div>
+                                <span class="icon-box1">
+                                 <div class="stats-title">إضافة مادة<small class="text-muted"
+                                                                           style="color: #ffffff">(<?php echo $accounts->num_rows; ?>)</small></div>
+                                 <br>
+                                 <br>
+                                 <hr>
+                                 <div class="stats-desc">إضافة مادة جديدة</div>
+                             </span>
+                            </a>
+                        </div> <!-- /.box-menu -->
+                    </div>
+                <?php endif; ?> <!-- /.col-* -->
                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                     <div class="box-menu">
                         <a href="<?php site_url('admin/item/list.php'); ?>">
-						<span class="icon-box2">
-                            <div class="stats-title">بطاقة معونة</div>
-                            <i class="faw fa-list" style="color: rgba(255, 255, 255, 0.4117647058823529);"></i>
-                            <hr>
-                            <div class="stats-desc">بحث وتعديل وجرد المعونات</div>
-                        </span>
-
-
+                            <div class="card-icon1">
+                                <i class="faw fa-cubes" style="color: #ffffff; font-size: 45px; "></i>
+                            </div>
+                            <span class="icon-box1">
+                                 <div class="stats-title">قائمة المواد<small class="text-muted"
+                                                                             style="color: #ffffff">(<?php echo $accounts->num_rows; ?>)</small></div>
+                                 <br>
+                                 <br>
+                                 <hr>
+                                 <div class="stats-desc">جرد المواد المتوفرة</div>
+                             </span>
                         </a>
                     </div> <!-- /.box-menu -->
-                </div> <!-- /.col-* -->
+                </div><!-- /.col-* -->
             </div> <!-- /.row -->
 
             <div class="h-20 visible-xs"></div>
@@ -197,11 +205,13 @@ add_page_info('nav', array('name' => 'المواد'));
 
     <div class="row">
         <div class="col-md-4">
+            <div class="card">
+                <div class="card-header card-header-tabs card-header-blue">
+                    <div class="panel-heading"><h4 class="panel-title"><i class="fa fa-trophy text-white"></i>  أكثر المنتجات الممتازة</h4></div>
+                </div>
 
-            <small class="text-muted module-title-small"><i class="fa fa-trophy"></i> أكثر المنتجات الممتازة</small>
-            <div class="h-10"></div>
 
-            <div class="panel panel-info panel-heading-0 panel-border-right panel-table panel-dashboard-list">
+                <div class="panel-dashboard-list" style="height: 280px; height: 280px; overflow-x: hidden;overflow-y: scroll;">
                 <div class="panel-body">
                     <div class="panel-list">
                         <?php $query = db()->query("SELECT * FROM " . dbname('items') . " WHERE status='1' AND 	quantity > 0 ORDER BY quantity DESC LIMIT 50"); ?>
@@ -231,14 +241,14 @@ add_page_info('nav', array('name' => 'المواد'));
                     </div> <!-- /.panel-body -->
                 </div> <!-- /.panel-body -->
             </div> <!-- /.panel -->
-
+            </div>
         </div> <!-- /.col-* -->
         <div class="col-md-4">
-
-            <small class="text-muted module-title-small"><i class="fa fa-th-list"></i> أحدث المواد المضافة</small>
-            <div class="h-10"></div>
-
-            <div class="panel panel-warning panel-heading-0 panel-border-right panel-table panel-dashboard-list">
+            <div class="card">
+                <div class="card-header card-header-tabs card-header-danger">
+                    <div class="panel-heading"><h4 class="panel-title"><i class="fa fa-trophy text-white"></i>  أحدث المواد المضافة</h4></div>
+                </div>
+            <div class="panel-dashboard-list" style="height: 280px; height: 280px; overflow-x: hidden;overflow-y: scroll;">
                 <div class="panel-body">
                     <div class="panel-list">
                         <?php $query = db()->query("SELECT * FROM " . dbname('items') . " WHERE status='1' ORDER BY date DESC LIMIT 50"); ?>
@@ -268,7 +278,7 @@ add_page_info('nav', array('name' => 'المواد'));
                     </div> <!-- /.panel-body -->
                 </div> <!-- /.panel-body -->
             </div> <!-- /.panel -->
-
+            </div>
         </div> <!-- /.col-* -->
         <div class="col-md-4">
 
@@ -328,12 +338,13 @@ add_page_info('nav', array('name' => 'المواد'));
 
     <div class="row">
         <div class="col-md-8">
-
+            <div class="card">
+                <div class="card-header card-header-tabs card-header-success">
+                    <div class="panel-heading"><h4 class="panel-title"><i class="fa fa-trophy text-white"></i>  آخر حركات المعونة</h4></div>
+                </div>
+                <div class="h-20"></div>
             <div class="h-20 visible-xs"></div>
-            <small class="text-muted module-title-small"><i class="fa fa-th-list"></i> آخر حركات المعونة</small>
-            <div class="h-10"></div>
-
-            <div class="panel panel-success panel-heading-0 panel-border-right panel-table panel-dashboard-list">
+                <div class="panel-dashboard-list" style="height: 280px; height: 280px; overflow-x: hidden;overflow-y: scroll;">
                 <div class="panel-body">
                     <div class="panel-list">
                         <?php $query = db()->query("SELECT * FROM " . dbname('form_items') . " WHERE status='1' AND type='item' AND item_id > 0 ORDER BY date DESC LIMIT 50"); ?>
@@ -381,7 +392,7 @@ add_page_info('nav', array('name' => 'المواد'));
                     </div> <!-- /.panel-list -->
                 </div> <!-- /.panel-body -->
             </div> <!-- /.panel -->
-
+            </div>
         </div> <!-- /.col-* -->
         <div class="col-md-4">
 

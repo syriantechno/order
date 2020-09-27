@@ -27,7 +27,7 @@ include_content_page('detail', $account->type, 'account');
 ?>
 
 
-<?php get_header(); ?>
+<?php get_header_warning(); ?>
 <?php
 
 if (isset($_POST['update'])) {

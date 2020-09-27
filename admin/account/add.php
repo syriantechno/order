@@ -1,7 +1,7 @@
 <?php include('../../ultra.php'); ?>
 <?php include_content_page('add', false, 'account'); ?>
 
-<?php get_header(); ?>
+<?php get_header_warning(); ?>
 <?php
 add_page_info('title', 'إضافة مستفيد');
 add_page_info('nav', array('name' => 'المستفيد', 'url' => get_site_url('admin/account/')));
