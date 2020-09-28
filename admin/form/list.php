@@ -92,7 +92,6 @@ $forms = get_forms(array('_GET' => true)); ?>
 <div class="card">
     <div class="card-header card-header-tabs card-header-primary" style="margin-bottom: 20px;">
         <div class="panel-heading">
-            <div class="row">
                 <div class="col-md-6" style="display: flex">
                     <h3 class="panel-title">قائمة التوزيع</h3>
                     <form action="<?= $_SERVER['PHP_SELF']; ?>" method="get" class="form-inline">
@@ -143,8 +142,9 @@ $forms = get_forms(array('_GET' => true)); ?>
                         <!-- Single button -->
                         <div class="btn-group btn-icon" data-toggle="tooltip" data-placement="top" title="Excel">
                             <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">
-                                <i class="fa fa-file-excel-o"></i>
+                                    aria-haspopup="true" aria-expanded="false" style="background: transparent;
+    border: transparent; font-size: x-large;">
+                                <i class="fa fa-file-excel-o text-white"></i>
                             </button>
                             <ul class="dropdown-menu dropdown-menu-right">
                                 <li class="dropdown-header"><i class="fa fa-download"></i> EXCEL تصدير</li>
@@ -161,8 +161,9 @@ $forms = get_forms(array('_GET' => true)); ?>
                         <!-- Single button -->
                         <div class="btn-group btn-icon" data-toggle="tooltip" data-placement="top" title="طباعة">
                             <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">
-                                <i class="fa fa-print"></i>
+                                    aria-haspopup="true" aria-expanded="false" style="background: transparent;
+    border: transparent; font-size: x-large;">
+                                <i class="fa fa-print text-white"></i>
                             </button>
                             <ul class="dropdown-menu dropdown-menu-right">
                                 <li class="dropdown-header"><i class="fa fa-file-o"></i> طباعة</li>
@@ -186,7 +187,7 @@ $forms = get_forms(array('_GET' => true)); ?>
 
                     </div>
                 </div> <!-- /.col-md-6 -->
-            </div> <!-- /.row -->
+
         </div> <!-- /.panel-heading -->
     </div>
         <?php if ($forms): ?>

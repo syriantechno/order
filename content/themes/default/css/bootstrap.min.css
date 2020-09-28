@@ -3456,7 +3456,7 @@ border-top-right-radius : 0;
 position : relative;
 min-height : 25px;
 margin-bottom : 20px;
-border : transparent solid 1px;
+
 }
 @media (min-width:768px) {
 .navbar {

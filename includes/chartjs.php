@@ -31,8 +31,8 @@ function chartjs($args)
     // sirasi ile arka plan renkleri
     if ($args['backgroundColor'] == true) {
         $args['backgroundColor'] = array();
-        $args['backgroundColor'][] = '#ffffff';
-        $args['backgroundColor'][] = '#ffffff';
+        $args['backgroundColor'][] = 'rgba(0, 255, 255, 0.5)';
+        $args['backgroundColor'][] = 'rgba(255, 99, 132, 0.2)';
         $args['backgroundColor'][] = 'rgba(255, 99, 132, 0.2)';
         $args['backgroundColor'][] = 'rgba(153, 102, 255, 0.2)';
         $args['backgroundColor'][] = 'rgba(255, 159, 64, 0.2)';
@@ -47,8 +47,8 @@ function chartjs($args)
     // sirasi ile arka plan cerceve renkleri
     if ($args['borderColor'] == true) {
         $args['borderColor'] = array();
-        $args['borderColor'][] = '#ffffff';
-        $args['borderColor'][] = 'rgba(75, 192, 192, 1)';
+        $args['borderColor'][] = '#cecece';
+        $args['borderColor'][] = '#cecece';
         $args['borderColor'][] = 'rgba(255,99,132,1)';
         $args['borderColor'][] = 'rgba(153, 102, 255, 1)';
         $args['borderColor'][] = 'rgba(255, 159, 64, 1)';

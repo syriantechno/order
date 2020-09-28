@@ -254,7 +254,7 @@ if ($form->id) {
             print_alert('change_form_status');
         }
         ?>
-        <form name="form_add_accout" id="form_add_account"
+        <form name="form_add_account" id="form_add_account"
               action="<?php if ($form->id): ?>?id=<?php echo $form->id; ?><?php else: ?><?php endif; ?>" method="POST"
               class="validate">
 
@@ -526,7 +526,7 @@ if ($form->id) {
                                    value="<?php echo microtime(true); ?>">
                             <button class="btn btn-default" id="add_item"><i class="fa fa-plus"></i></button>
                         </td>
-                        <td width="50%" class="hidden-xs-portrait">
+                        <td class="hidden-xs-portrait">
                             <div class="form-group">
                                 <label for="item_code"><i class="fa fa-barcode hidden-xs"></i><span class="visible-xs">الكود</span>
                                     <span class="hidden-xs">باركود المعونة او المساعدة</span></label>
@@ -534,7 +534,7 @@ if ($form->id) {
                             </div> <!-- /.form-group -->
                         </td>
 
-                        <td width="50%">
+                        <td >
                             <div class="form-group">
                                 <label for="item_name"><span class="visible-xs">الاسم</span><span class="hidden-xs">اسم  المعونة او المساعدة</span></label>
                                 <input type="text" name="item_name" id="item_name" class="form-control input-sm">
@@ -542,46 +542,46 @@ if ($form->id) {
                             </div> <!-- /.form-group -->
 
                         </td>
-                        <td class="hidden">
-                            <div class="form-group hidden">
+                        <td>
+                            <div class="form-group ">
                                 <label for="quantity">العدد</label>
-                                <input type="hidden" name="quantity" value="1" id="quantity"
+                                <input type="tel" name="quantity" value="1" id="quantity"
                                        class="form-control input-sm calc_item">
                             </div> <!-- /.form-group -->
                         </td>
                         <td>
-                            <div class="form-group hidden">
+                            <div class="form-group ">
                                 <label for="price">س.افرادي</label>
-                                <input type="hidden" pattern="[0-9]+([\.,][0-9]+)?" name="price" id="price" value="0"
+                                <input type="tel" pattern="[0-9]+([\.,][0-9]+)?" name="price" id="price" value="0"
                                        class="form-control input-sm money calc_item">
                             </div> <!-- /.form-group -->
                         </td>
-                        <td class="hidden">
+                        <td>
                             <div class="form-group">
                                 <label for="total">س.إجمالي</label>
-                                <input type="hidden" value="0" min="0" name="total" id="total"
+                                <input type="tel" value="0" min="0" name="total" id="total"
                                        class="form-control input-sm money calc_item">
                             </div> <!-- /.form-group -->
                         </td>
-                        <td class="hidden">
+                        <td>
                             <div class="form-group">
                                 <label for="item_vat">VAT</label>
-                                <input type="hidden" value="0" name="vat" id="vat"
+                                <input type="tel" value="0" name="vat" id="vat"
                                        class="form-control input-sm calc_item">
                             </div> <!-- /.form-group -->
                         </td>
-                        <td class="hidden">
+                        <td>
                             <div class="form-group">
                                 <label for="vat_total"><span class="hidden-xs">T.VAT</span><span
                                             class="visible-xs fs-11">T.VAT</span></label>
-                                <input type="hidden" value="0" min="0" name="vat_total" id="vat_total"
+                                <input type="tel" value="0" min="0" name="vat_total" id="vat_total"
                                        class="form-control input-sm money calc_item">
                             </div> <!-- /.form-group -->
                         </td>
-                        <td class="hidden">
-                            <div class="form-group hidden">
+                        <td>
+                            <div class="form-group ">
                                 <label for="col_total"><span class="hidden-xs">المجموع</span><span class="visible-xs">المجموع</span></label>
-                                <input type="hidden" value="0" name="col_total" id="col_total"
+                                <input type="tel" value="0" name="col_total" id="col_total"
                                        class="form-control input-sm money">
                             </div> <!-- /.form-group -->
                         </td>
@@ -599,12 +599,12 @@ if ($form->id) {
                                             title="حذف"><i class="fa fa-trash"></i></a></td>
                                 <td class="hidden-xs-portrait"><?php echo $item->item_code; ?></td>
                                 <td><?php echo $item->item_name; ?></td>
-                                <td class="hidden"><?php echo $item->quantity; ?></td>
-                                <td class="hidden"><?php echo get_set_money($item->price, true); ?></td>
-                                <td class="hidden hidden-xs"><?php echo get_set_money($item->total, true); ?></td>
-                                <td class="hidden text-muted hidden-xs"><?php echo $item->vat; ?></td>
-                                <td class="hidden text-muted hidden-xs"><?php echo get_set_money($item->vat_total, true); ?></td>
-                                <td class="hidden"><?php echo get_set_money($item->total, true); ?></td>
+                                <td class=""><?php echo $item->quantity; ?></td>
+                                <td class=""><?php echo get_set_money($item->price, true); ?></td>
+                                <td class=" "><?php echo get_set_money($item->total, true); ?></td>
+                                <td class=" text-muted "><?php echo $item->vat; ?></td>
+                                <td class=" text-muted "><?php echo get_set_money($item->vat_total, true); ?></td>
+                                <td class=""><?php echo get_set_money($item->total, true); ?></td>
                             </tr>
                             <?php $total_vat = $total_vat + $item->vat_total; ?>
                         <?php endforeach; ?>
@@ -615,19 +615,19 @@ if ($form->id) {
                         <tr class="fs-12">
                             <th class="text-center text-muted"><?php echo @$form->item_count; ?></th>
                             <th colspan="2"></th>
-                            <th class="hidden text-center"><?php echo @$form->item_quantity; ?></th>
-                            <th class="hidden text-right text-muted hidden-xs"><?php echo get_set_money(@$total_vat, true); ?></th>
+                            <th class=" text-center"><?php echo @$form->item_quantity; ?></th>
+                            <th class=" text-right text-muted hidden-xs"><?php echo get_set_money(@$total_vat, true); ?></th>
                             <th colspan="2"
-                                class=" hidden text-right fs-12"><?php echo get_set_money(@$form->total, true); ?></th>
+                                class="  text-right fs-12"><?php echo get_set_money(@$form->total, true); ?></th>
                         </tr>
                     <?php else: ?>
                         <tr>
-                            <th class="hidden text-center text-muted"><?php echo @$form->item_count; ?></th>
+                            <th class=" text-center text-muted"><?php echo @$form->item_count; ?></th>
                             <th colspan="2"></th>
-                            <th class="hidden text-center"><?php echo @$form->item_quantity; ?></th>
+                            <th class=" text-center"><?php echo @$form->item_quantity; ?></th>
                             <th colspan="3"></th>
-                            <th class="hidden text-right text-muted hidden-xs"><?php echo get_set_money(@$total_vat, true); ?></th>
-                            <th class="hidden text-right"><?php echo get_set_money(@$form->total, true); ?></th>
+                            <th class=" text-right text-muted hidden-xs"><?php echo get_set_money(@$total_vat, true); ?></th>
+                            <th class=" text-right"><?php echo get_set_money(@$form->total, true); ?></th>
                         </tr>
                     <?php endif; ?>
                     </tfoot>

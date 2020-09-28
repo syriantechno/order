@@ -33,11 +33,11 @@ add_page_info('title', 'order delivery');
                             <i class="faw fa-cubes" style="color: #ffffff; font-size: 45px; "></i>
                         </div>
                         <span class="icon-box1">
-                            <div class="stats-title">المعونة</div>
+                            <div class="stats-title">المواد</div>
                             <br>
                 <br>
                              <hr>
-			    <div class="stats-desc">اضافة وتعديل وجرد المعونة</div>
+			    <div class="stats-desc">اضافة وتعديل وجرد المواد</div>
                         </span>
 
                     </a>
@@ -78,40 +78,40 @@ add_page_info('title', 'order delivery');
                     </a>
                 </div> <!-- /.box-menu -->
                 </div><?php endif; ?> <!-- /.col-* -->
-<!--            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">-->
-<!--                <div class="box-menu">-->
-<!--                    <a href="--><?php //site_url('admin/user/'); ?><!--">-->
-<!--                        <div class="card-icon4">-->
-<!--                            <i class="faw fa-user-o" style="color: #ffffff; font-size: 45px; "></i>-->
-<!--                        </div>-->
-<!--                        <span class="icon-box1">-->
-<!--                            <div class="stats-title">الموظفين</div>-->
-<!--                             <br>-->
-<!--                <br>-->
-<!--                             <hr>-->
-<!--			    <div class="stats-desc">إضافة موظفين واعطاء الرتب</div>-->
-<!--                        </span>-->
-<!---->
-<!--                    </a>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">-->
-<!--                <div class="box-menu">-->
-<!--                    <a href="--><?php //site_url('admin/system/'); ?><!--">-->
-<!--                        <div class="card-icon5">-->
-<!--                            <i class="faw fa-cogs" style="color: #ffffff; font-size: 45px; "></i>-->
-<!--                        </div>-->
-<!--                        <span class="icon-box1">-->
-<!--                            <div class="stats-title">الاعدادات</div>-->
-<!--                             <br>-->
-<!--                <br>-->
-<!--                             <hr>-->
-<!--			    <div class="stats-desc">تعديل اعدادت البرنامج</div>-->
-<!--                        </span>-->
-<!---->
-<!--                    </a>-->
-<!--                </div>-->
-<!--            </div>-->
+            <!--            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">-->
+            <!--                <div class="box-menu">-->
+            <!--                    <a href="--><?php //site_url('admin/user/'); ?><!--">-->
+            <!--                        <div class="card-icon4">-->
+            <!--                            <i class="faw fa-user-o" style="color: #ffffff; font-size: 45px; "></i>-->
+            <!--                        </div>-->
+            <!--                        <span class="icon-box1">-->
+            <!--                            <div class="stats-title">الموظفين</div>-->
+            <!--                             <br>-->
+            <!--                <br>-->
+            <!--                             <hr>-->
+            <!--			    <div class="stats-desc">إضافة موظفين واعطاء الرتب</div>-->
+            <!--                        </span>-->
+            <!---->
+            <!--                    </a>-->
+            <!--                </div>-->
+            <!--            </div>-->
+            <!--            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">-->
+            <!--                <div class="box-menu">-->
+            <!--                    <a href="--><?php //site_url('admin/system/'); ?><!--">-->
+            <!--                        <div class="card-icon5">-->
+            <!--                            <i class="faw fa-cogs" style="color: #ffffff; font-size: 45px; "></i>-->
+            <!--                        </div>-->
+            <!--                        <span class="icon-box1">-->
+            <!--                            <div class="stats-title">الاعدادات</div>-->
+            <!--                             <br>-->
+            <!--                <br>-->
+            <!--                             <hr>-->
+            <!--			    <div class="stats-desc">تعديل اعدادت البرنامج</div>-->
+            <!--                        </span>-->
+            <!---->
+            <!--                    </a>-->
+            <!--                </div>-->
+            <!--            </div>-->
         </div>
         <div class="row space-5">
 
@@ -189,10 +189,10 @@ add_page_info('title', 'order delivery');
                 $chart['type'] = 'line';
                 $chart['data']['datasets'][0]['label'] = 'الحركة';
                 $chart['data']['datasets'][0]['fill'] = false;
-                $chart['data']['datasets'][0]['lineTension'] = '0.3';
-                $chart['data']['datasets'][0]['borderWidth'] = 5;
-                $chart['data']['datasets'][0]['pointBorderWidth'] = 3;
-                $chart['data']['datasets'][0]['pointRadius'] = 5;
+                $chart['data']['datasets'][0]['lineTension'] = 0.1;
+                $chart['data']['datasets'][0]['borderWidth'] = 1.5;
+                $chart['data']['datasets'][0]['pointBorderWidth'] = 1;
+                $chart['data']['datasets'][0]['pointRadius'] = 3;
 
                 $chart['data']['datasets'][1]['label'] = 'دخول المال';
                 $chart['data']['datasets'][1]['type'] = 'line';
@@ -253,13 +253,16 @@ add_page_info('title', 'order delivery');
                 ?>
                 <div class="relative"><?php chartjs($args); ?></div>
             </div>
-            <div class="h-40"></div>
             <div class="h-20"></div>
-            <div class="stats-desc">إضافة صناديق وبنوك</div>
+            <div class="stats-title"> المبيعات</div>
+            <div class="text-muted stats-title" style="font-size: 11px;"> عرض المبيعات بشكل بياني لمدة 14 يوم</div>
+            <div class="card-footer"></div>
+            <br>
+            <div class=" p-5 stats-desc text-muted"><i class="fa fa-clock-o"></i> يتم التحديث كل 24 ساعة او عند البيع
+                بشكل اَلي
+            </div>
         </div>
-        <br>
-        <br>
-        <hr>
+
 
     </div>
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
@@ -275,10 +278,10 @@ add_page_info('title', 'order delivery');
                 $total['lastMonth'] = 0;
 
                 $args['status'] = 1;
-                $args['type'] = 'form';
+                $args['type'] = 'payment';
                 $args['in_out'] = '0';
                 $args['q'] = "date >= '" . date('Y-m', strtotime("-1 months")) . "-01 00:00:000' AND date <= '" . date('Y-m-d') . " 23:59:59'";
-                $query = db()->query("SELECT date,item_count FROM " . dbname('forms') . " " . sql_where_string($args) . " ");
+                $query = db()->query("SELECT date,total FROM " . dbname('forms') . " " . sql_where_string($args) . " ");
 
                 if ($query->num_rows) {
                     while ($list = $query->fetch_object()) {
@@ -286,37 +289,37 @@ add_page_info('title', 'order delivery');
 
                         // day
                         if ($_date == date('Y-m-d')) {
-                            $total['day'] = $total['day'] + $list->item_count;
+                            $total['day'] = $total['day'] + $list->total;
                         }
 
                         // yesterday
                         if ($_date == date('Y-m-d', strtotime("-1 day"))) {
-                            $total['yesterday'] = $total['yesterday'] + $list->item_count;
+                            $total['yesterday'] = $total['yesterday'] + $list->total;
                         }
 
                         // last7day
                         if ($_date >= date('Y-m-d', strtotime("-8 day")) AND $_date <= date('Y-m-d')) {
-                            $total['last7day'] = $total['last7day'] + $list->item_count;
+                            $total['last7day'] = $total['last7day'] + $list->total;
                         }
 
                         // thisMonth
                         if ($_date >= date('Y-m') . "-01" AND $_date <= date('Y-m-d')) {
-                            $total['thisMonth'] = $total['thisMonth'] + $list->item_count;
+                            $total['thisMonth'] = $total['thisMonth'] + $list->total;
                         }
 
                         // last8Day
                         if ($_date >= date('Y-m-d', strtotime("-8 day")) AND $_date <= date('Y-m-d', strtotime("-8 day"))) {
-                            $total['last8Day'] = $total['last8Day'] + $list->item_count;
+                            $total['last8Day'] = $total['last8Day'] + $list->total;
                         }
 
                         // lastWeek
                         if ($_date >= date('Y-m-d', strtotime("-14 day")) AND $_date <= date('Y-m-d', strtotime("-8 day"))) {
-                            $total['lastWeek'] = $total['lastWeek'] + $list->item_count;
+                            $total['lastWeek'] = $total['lastWeek'] + $list->total;
                         }
 
                         // lastMonth
                         if ($_date >= date('Y-m', strtotime("-1 months")) . "-01" AND $_date <= date('Y-m', strtotime("-1 months")) . "-" . date('d H:i:s')) {
-                            $total['lastMonth'] = $total['lastMonth'] + $list->item_count;
+                            $total['lastMonth'] = $total['lastMonth'] + $list->total;
                         }
                     }
                 }
@@ -328,24 +331,25 @@ add_page_info('title', 'order delivery');
 
                 <?php
                 $chart = array();
-                $chart['type'] = 'line';
+                $chart['type'] = 'bar';
                 $chart['data']['datasets'][0]['label'] = 'الحركة';
-                $chart['data']['datasets'][0]['fill'] = true;
-                $chart['data']['datasets'][0]['lineTension'] = '0.3';
-                $chart['data']['datasets'][0]['borderWidth'] = 2;
-                $chart['data']['datasets'][0]['pointBorderWidth'] = 3;
-                $chart['data']['datasets'][0]['pointRadius'] = 3;
+                $chart['data']['datasets'][0]['fill'] = false;
+                $chart['data']['datasets'][0]['lineTension'] = 0.1;
+                $chart['data']['datasets'][0]['borderWidth'] = 1;
+                $chart['data']['datasets'][0]['pointBorderWidth'] = 13;
+                $chart['data']['datasets'][0]['pointRadius'] = 1;
+                $chart['data']['datasets'][0]['backgroundColor'] = '#ffffff';
 
                 $chart['data']['datasets'][1]['label'] = 'دخول المال';
                 $chart['data']['datasets'][1]['type'] = 'line';
-                $chart['data']['datasets'][1]['fill'] = true;
+                $chart['data']['datasets'][1]['fill'] = false;
                 $chart['data']['datasets'][1]['lineTension'] = '0.3';
                 $chart['data']['datasets'][1]['borderWidth'] = 1.5;
                 $chart['data']['datasets'][1]['pointBorderWidth'] = 1;
                 $chart['data']['datasets'][1]['pointRadius'] = 1.5;
 
                 $chart['data']['datasets'][2]['label'] = 'Giri?ler';
-                $chart['data']['datasets'][2]['fill'] = true;
+                $chart['data']['datasets'][2]['fill'] = false;
                 $chart['data']['datasets'][2]['lineTension'] = '0.3';
                 $chart['data']['datasets'][2]['borderWidth'] = 1.5;
                 $chart['data']['datasets'][2]['pointBorderWidth'] = 1;
@@ -353,7 +357,7 @@ add_page_info('title', 'order delivery');
 
                 $chart['data']['datasets'][3]['label'] = 'خروج المال';
                 $chart['data']['datasets'][3]['type'] = 'line';
-                $chart['data']['datasets'][3]['fill'] = true;
+                $chart['data']['datasets'][3]['fill'] = false;
                 $chart['data']['datasets'][3]['lineTension'] = '0.3';
                 $chart['data']['datasets'][3]['borderWidth'] = 1.5;
                 $chart['data']['datasets'][3]['pointBorderWidth'] = 1;
@@ -367,8 +371,8 @@ add_page_info('title', 'order delivery');
 
                     $chart['data']['labels'][] = til_get_date($_start_date, 'd F');
                     $_total = 0;
-                    $q_forms = db()->query("SELECT sum(item_count) as item_count FROM " . dbname('forms') . " WHERE status='1' AND type='form' AND in_out='0' AND date >= '" . $_start_date . " 00:00:00' AND date <= '" . $_start_date . " 23:59:59' ORDER BY id DESC, date DESC");
-                    if (($_total = $q_forms->fetch_object()->item_count) > 0) {
+                    $q_forms = db()->query("SELECT sum(total) as total FROM " . dbname('forms') . " WHERE status='1' AND type='payment' AND in_out='0' AND date >= '" . $_start_date . " 00:00:00' AND date <= '" . $_start_date . " 23:59:59' ORDER BY id DESC, date DESC");
+                    if (($_total = $q_forms->fetch_object()->total) > 0) {
                         $chart['data']['datasets'][0]['data'][] = $_total;
                     } else {
                         $chart['data']['datasets'][0]['data'][] = '0.00';
@@ -395,13 +399,16 @@ add_page_info('title', 'order delivery');
                 ?>
                 <div class="relative"><?php chartjs($args); ?></div>
             </div>
-            <div class="h-40"></div>
             <div class="h-20"></div>
-            <div class="stats-desc">إضافة صناديق وبنوك</div>
+            <div class="stats-title"> المقبوضات</div>
+            <div class="text-muted stats-title" style="font-size: 11px;"> عرض المقبوضات بشكل بياني لمدة 14 يوم</div>
+            <div class="card-footer"></div>
+            <br>
+            <div class=" p-5 stats-desc text-muted"><i class="fa fa-clock-o"></i> يتم التحديث كل 24 ساعة او عند القبض
+                بشكل اَلي
+            </div>
         </div>
-        <br>
-        <br>
-        <hr>
+
 
     </div>
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
@@ -417,10 +424,10 @@ add_page_info('title', 'order delivery');
                 $total['lastMonth'] = 0;
 
                 $args['status'] = 1;
-                $args['type'] = 'form';
-                $args['in_out'] = '0';
+                $args['type'] = 'payment';
+                $args['in_out'] = '1';
                 $args['q'] = "date >= '" . date('Y-m', strtotime("-1 months")) . "-01 00:00:000' AND date <= '" . date('Y-m-d') . " 23:59:59'";
-                $query = db()->query("SELECT date,item_count FROM " . dbname('forms') . " " . sql_where_string($args) . " ");
+                $query = db()->query("SELECT date,total FROM " . dbname('forms') . " " . sql_where_string($args) . " ");
 
                 if ($query->num_rows) {
                     while ($list = $query->fetch_object()) {
@@ -428,37 +435,37 @@ add_page_info('title', 'order delivery');
 
                         // day
                         if ($_date == date('Y-m-d')) {
-                            $total['day'] = $total['day'] + $list->item_count;
+                            $total['day'] = $total['day'] + $list->total;
                         }
 
                         // yesterday
                         if ($_date == date('Y-m-d', strtotime("-1 day"))) {
-                            $total['yesterday'] = $total['yesterday'] + $list->item_count;
+                            $total['yesterday'] = $total['yesterday'] + $list->total;
                         }
 
                         // last7day
                         if ($_date >= date('Y-m-d', strtotime("-8 day")) AND $_date <= date('Y-m-d')) {
-                            $total['last7day'] = $total['last7day'] + $list->item_count;
+                            $total['last7day'] = $total['last7day'] + $list->total;
                         }
 
                         // thisMonth
                         if ($_date >= date('Y-m') . "-01" AND $_date <= date('Y-m-d')) {
-                            $total['thisMonth'] = $total['thisMonth'] + $list->item_count;
+                            $total['thisMonth'] = $total['thisMonth'] + $list->total;
                         }
 
                         // last8Day
                         if ($_date >= date('Y-m-d', strtotime("-8 day")) AND $_date <= date('Y-m-d', strtotime("-8 day"))) {
-                            $total['last8Day'] = $total['last8Day'] + $list->item_count;
+                            $total['last8Day'] = $total['last8Day'] + $list->total;
                         }
 
                         // lastWeek
                         if ($_date >= date('Y-m-d', strtotime("-14 day")) AND $_date <= date('Y-m-d', strtotime("-8 day"))) {
-                            $total['lastWeek'] = $total['lastWeek'] + $list->item_count;
+                            $total['lastWeek'] = $total['lastWeek'] + $list->total;
                         }
 
                         // lastMonth
                         if ($_date >= date('Y-m', strtotime("-1 months")) . "-01" AND $_date <= date('Y-m', strtotime("-1 months")) . "-" . date('d H:i:s')) {
-                            $total['lastMonth'] = $total['lastMonth'] + $list->item_count;
+                            $total['lastMonth'] = $total['lastMonth'] + $list->total;
                         }
                     }
                 }
@@ -470,24 +477,26 @@ add_page_info('title', 'order delivery');
 
                 <?php
                 $chart = array();
-                $chart['type'] = 'line';
+                $chart['type'] = 'bar';
                 $chart['data']['datasets'][0]['label'] = 'الحركة';
                 $chart['data']['datasets'][0]['fill'] = true;
-                $chart['data']['datasets'][0]['lineTension'] = '0.3';
-                $chart['data']['datasets'][0]['borderWidth'] = 2;
+                $chart['data']['datasets'][0]['lineTension'] = 0.1;
+                $chart['data']['datasets'][0]['borderWidth'] = 1;
                 $chart['data']['datasets'][0]['pointBorderWidth'] = 3;
-                $chart['data']['datasets'][0]['pointRadius'] = 3;
+                $chart['data']['datasets'][0]['pointRadius'] = 1;
+                $chart['data']['datasets'][0]['backgroundColor'] = '#ffffff';
+
 
                 $chart['data']['datasets'][1]['label'] = 'دخول المال';
                 $chart['data']['datasets'][1]['type'] = 'line';
-                $chart['data']['datasets'][1]['fill'] = true;
+                $chart['data']['datasets'][1]['fill'] = false;
                 $chart['data']['datasets'][1]['lineTension'] = '0.3';
                 $chart['data']['datasets'][1]['borderWidth'] = 1.5;
                 $chart['data']['datasets'][1]['pointBorderWidth'] = 1;
                 $chart['data']['datasets'][1]['pointRadius'] = 1.5;
 
                 $chart['data']['datasets'][2]['label'] = 'Giri?ler';
-                $chart['data']['datasets'][2]['fill'] = true;
+                $chart['data']['datasets'][2]['fill'] = false;
                 $chart['data']['datasets'][2]['lineTension'] = '0.3';
                 $chart['data']['datasets'][2]['borderWidth'] = 1.5;
                 $chart['data']['datasets'][2]['pointBorderWidth'] = 1;
@@ -496,10 +505,10 @@ add_page_info('title', 'order delivery');
                 $chart['data']['datasets'][3]['label'] = 'خروج المال';
                 $chart['data']['datasets'][3]['type'] = 'line';
                 $chart['data']['datasets'][3]['fill'] = true;
-                $chart['data']['datasets'][3]['lineTension'] = '0.3';
-                $chart['data']['datasets'][3]['borderWidth'] = 1.5;
-                $chart['data']['datasets'][3]['pointBorderWidth'] = 1;
-                $chart['data']['datasets'][3]['pointRadius'] = 1.4;
+                $chart['data']['datasets'][3]['lineTension'] = 0.1;
+                $chart['data']['datasets'][3]['borderWidth'] = 1;
+                $chart['data']['datasets'][3]['pointBorderWidth'] = 3;
+                $chart['data']['datasets'][3]['pointRadius'] = 1;
 
 
                 $_start_date = date('Y-m-d', strtotime('-2 week', strtotime(date('Y-m-d'))));
@@ -509,8 +518,8 @@ add_page_info('title', 'order delivery');
 
                     $chart['data']['labels'][] = til_get_date($_start_date, 'd F');
                     $_total = 0;
-                    $q_forms = db()->query("SELECT sum(item_count) as item_count FROM " . dbname('forms') . " WHERE status='1' AND type='form' AND in_out='0' AND date >= '" . $_start_date . " 00:00:00' AND date <= '" . $_start_date . " 23:59:59' ORDER BY id DESC, date DESC");
-                    if (($_total = $q_forms->fetch_object()->item_count) > 0) {
+                    $q_forms = db()->query("SELECT sum(total) as total FROM " . dbname('forms') . " WHERE status='1' AND type='payment' AND in_out='1' AND date >= '" . $_start_date . " 00:00:00' AND date <= '" . $_start_date . " 23:59:59' ORDER BY id DESC, date DESC");
+                    if (($_total = $q_forms->fetch_object()->total) > 0) {
                         $chart['data']['datasets'][0]['data'][] = $_total;
                     } else {
                         $chart['data']['datasets'][0]['data'][] = '0.00';
@@ -536,20 +545,16 @@ add_page_info('title', 'order delivery');
                 $args['chart'] = $chart;
                 ?>
                 <div class="relative"><?php chartjs($args); ?></div>
-             </div>
-            <div class="h-20"></div>
-
-            <div class="h-40"></div>
-
-            <div class="card-footer">
-                <div class="stats">
-                    <i class="fa fa-facebook"></i>
-                </div>
             </div>
+            <div class="h-20"></div>
+            <div class="stats-title"> المدفوعات</div>
+            <div class="text-muted stats-title" style="font-size: 11px;"> عرض المدفوعات بشكل بياني لمدة 14 يوم</div>
+            <div class="card-footer"></div>
             <br>
-            <div class="stats-desc">إضافة صناديق وبنوك</div>
+            <div class=" p-5 stats-desc text-muted"><i class="fa fa-clock-o"></i> يتم التحديث كل 24 ساعة او عند الدفع
+                بشكل اَلي
+            </div>
         </div>
-
 
 
     </div>
@@ -567,7 +572,7 @@ add_page_info('title', 'order delivery');
                 <?php foreach ($form_status_all as $key => $status): ?>
                     <a href="admin/form/list.php?status_id=<?php echo $status->id; ?>"
                        class="list-group-item-column"
-                       style=" border-radius: 5px; border-left:25px solid <?php echo $status->bg_color; ?>; width: 48% " >
+                       style=" border-radius: 5px; border-left:25px solid <?php echo $status->bg_color; ?>; width: 48% ">
                         <?php echo $status->name; ?>
                         <?php if ($status->is_default == 'default'): ?>
                             <small class="text-muted">(افتراضي)</small><?php endif; ?>
@@ -586,51 +591,52 @@ add_page_info('title', 'order delivery');
         <div class="h-7"></div>
         <?php $query = db()->query("SELECT * FROM " . dbname('forms') . " WHERE status='1' AND type='form' AND in_out='0' ORDER BY date DESC LIMIT 50"); ?>
         <?php if ($query->num_rows): ?>
-<div class="card">
-    <div class="card-header card-header-tabs card-header-blue">
-        <div class="panel-heading"><h4 class="panel-title"><i class="fa fa-file-o text-white"></i>  اخر 50 حركة</h4></div>
-    </div>
-                <div class="panel-body" style="height:280px; overflow: auto;">
-                    <table class="table table-hover table-condensed table-striped table-striped">
-                        <tbody>
-                        <?php while ($list = $query->fetch_object()): ?>
-                            <?php $form_status = get_form_status($list->status_id); ?>
-                            <tr class="pointer" onclick="location.href='<?php site_url('form', $list->id); ?>';">
-                                <td width="80"><a
-                                            href="<?php site_url('form', $list->id); ?>">#<?php echo $list->id; ?></a>
-                                </td>
-                                <td><?php echo til_get_substr($list->account_name, 0, 30); ?></td>
-                                <td class="text-muted"><i class="fa fa-square"
-                                                          style=" color:<?php echo $form_status->bg_color; ?>;"></i> <?php echo til_get_strtoupper($form_status->name); ?>
-                                </td>
-                                <td>
-                                    <?php
-                                    if ($list->type == 'form') {
-                                        $item = get_form_items($list->id);
-                                        $item = $item->list[0];
-                                        $in_out = ($list->in_out == '0') ? 'معونة' : 'معونة';
-                                        echo " {$in_out} : "
-                                            . " عدد {$list->item_quantity} "
-                                            . " : {$item->item_name}";
-                                    } elseif ($list->type == 'payment') {
-                                        if ($list->in_out == '0') {
-                                            echo 'دفعة منه';
-                                        } else {
-                                            echo 'دفعة له';
-                                        }
+        <div class="card">
+            <div class="card-header card-header-tabs card-header-blue">
+                <div class="panel-heading"><h4 class="panel-title"><i class="fa fa-file-o text-white"></i> اخر 50 حركة
+                    </h4></div>
+            </div>
+            <div class="panel-body" style="height:280px; overflow: auto;">
+                <table class="table table-hover table-condensed table-striped table-striped">
+                    <tbody>
+                    <?php while ($list = $query->fetch_object()): ?>
+                        <?php $form_status = get_form_status($list->status_id); ?>
+                        <tr class="pointer" onclick="location.href='<?php site_url('form', $list->id); ?>';">
+                            <td width="80"><a
+                                        href="<?php site_url('form', $list->id); ?>">#<?php echo $list->id; ?></a>
+                            </td>
+                            <td><?php echo til_get_substr($list->account_name, 0, 30); ?></td>
+                            <td class="text-muted"><i class="fa fa-square"
+                                                      style=" color:<?php echo $form_status->bg_color; ?>;"></i> <?php echo til_get_strtoupper($form_status->name); ?>
+                            </td>
+                            <td>
+                                <?php
+                                if ($list->type == 'form') {
+                                    $item = get_form_items($list->id);
+                                    $item = $item->list[0];
+                                    $in_out = ($list->in_out == '0') ? 'معونة' : 'معونة';
+                                    echo " {$in_out} : "
+                                        . " عدد {$list->item_quantity} "
+                                        . " : {$item->item_name}";
+                                } elseif ($list->type == 'payment') {
+                                    if ($list->in_out == '0') {
+                                        echo 'دفعة منه';
+                                    } else {
+                                        echo 'دفعة له';
                                     }
-                                    ?>
-                                </td>
-                            </tr>
-                        <?php endwhile; ?>
-                        </tbody>
-                    </table>
-                </div>
+                                }
+                                ?>
+                            </td>
+                        </tr>
+                    <?php endwhile; ?>
+                    </tbody>
+                </table>
+            </div>
 
-        <?php else: ?>
+            <?php else: ?>
 
-        <?php endif; ?>
-</div>
+            <?php endif; ?>
+        </div>
     </div>
 
 
@@ -845,75 +851,79 @@ add_page_info('title', 'order delivery');
         <div class="h-20"></div>
         <div class="card">
             <div class="card-header card-header-tabs card-header-success">
-                <div class="panel-heading"><h4 class="panel-title"><i class="fa fa-file-o text-white"></i> قائمة المهام</h4></div>
+                <div class="panel-heading"><h4 class="panel-title"><i class="fa fa-file-o text-white"></i> قائمة المهام
+                    </h4></div>
             </div>
 
-        <?php if ($tasks = get_tasks(array('query' => _get_query_task('inbox')))): ?>
-            <div class="panel-dashboard-list" style="height: 280px; height: 280px; overflow-x: hidden; overflow-y: scroll;">
-                <div class="panel-body" style="height:280px; overflow: auto;">
-                    <table class="table table-hover table-condensed table-striped">
-                        <tbody>
-                        <?php foreach ($tasks as $task): ?>
-                            <?php $task = get_task($task->id); ?>
-                            <?php
-                            if ($task->choice_count) {
-                                $part = (100 / $task->choice_count);
-                                $part_completed = round($part * $task->choice_closed);
+            <?php if ($tasks = get_tasks(array('query' => _get_query_task('inbox')))): ?>
+                <div class="panel-dashboard-list"
+                     style="height: 280px; height: 280px; overflow-x: hidden; overflow-y: scroll;">
+                    <div class="panel-body" style="height:280px; overflow: auto;">
+                        <table class="table table-hover table-condensed table-striped">
+                            <tbody>
+                            <?php foreach ($tasks as $task): ?>
+                                <?php $task = get_task($task->id); ?>
+                                <?php
+                                if ($task->choice_count) {
+                                    $part = (100 / $task->choice_count);
+                                    $part_completed = round($part * $task->choice_closed);
 
 
-                                $progressbar_style = '';
-                                if ($part_completed < 30) {
-                                    $progressbar_style = 'progress-bar-danger';
-                                } elseif ($part_completed < 70) {
-                                    $progressbar_style = 'progress-bar-warning';
-                                } else {
-                                    $progressbar_style = 'progress-bar-success';
+                                    $progressbar_style = '';
+                                    if ($part_completed < 30) {
+                                        $progressbar_style = 'progress-bar-danger';
+                                    } elseif ($part_completed < 70) {
+                                        $progressbar_style = 'progress-bar-warning';
+                                    } else {
+                                        $progressbar_style = 'progress-bar-success';
+                                    }
                                 }
-                            }
-                            ?>
-                            <tr mobile-progress-width="100" mobile-progress-style="<?php echo $progressbar_style; ?>"
-                                class="<?php if (!$task->read_it and $task->inbox_u_id == get_active_user('id')): ?>bold<?php endif; ?> pointer"
-                                onclick="location.href='<?php site_url('task', $task->id); ?>';">
-                                <td width="40">
+                                ?>
+                                <tr mobile-progress-width="100"
+                                    mobile-progress-style="<?php echo $progressbar_style; ?>"
+                                    class="<?php if (!$task->read_it and $task->inbox_u_id == get_active_user('id')): ?>bold<?php endif; ?> pointer"
+                                    onclick="location.href='<?php site_url('task', $task->id); ?>';">
+                                    <td width="40">
 
-                                    <img src="<?php user_info($task->sen_u_id, 'avatar'); ?>"
-                                         class="img-responsive br-3 pull-right" width="32">
+                                        <img src="<?php user_info($task->sen_u_id, 'avatar'); ?>"
+                                             class="img-responsive br-3 pull-right" width="32">
 
-                                </td>
-                                <td class="hidden-xs-portrait visible-xs-landscape"><a
-                                            href="<?php site_url('task', $task->id); ?>">
-                                        <span class=""><?php user_info($task->sen_u_id, 'display_name'); ?></span> <br/>
-                                        <span class="text-muted"><?php echo $task->title; ?></span></td>
-                                <td class="visible-xs-landscape">
-                                    <?php echo til_get_date($task->date_end, 'datetime'); ?>
-                                    <br/>
-                                    <?php echo get_time_late(til_get_date($task->date_end, 'datetime')); ?>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="hidden-xs" colspan="5" style="padding: 0px; border-top: 0px;">
-                                    <?php if ($task->choice_count): ?>
-                                        <div class="progress m-0 br-2 h-3">
-                                            <div class="progress-bar progress-bar-stripedd <?php echo $progressbar_style; ?> text-muted"
-                                                 role="progressbar" aria-valuenow="<?php echo $part_completed; ?>"
-                                                 aria-valuemin="30" aria-valuemax="100"
-                                                 style="width: <?php echo($part_completed == '0' ? '25' : $part_completed); ?>%;">
-                                                <span class="sr-only"><?php echo $part_completed; ?>% tamamland?</span>
-                                                %<?php echo $part_completed; ?> tamamland?
+                                    </td>
+                                    <td class="hidden-xs-portrait visible-xs-landscape"><a
+                                                href="<?php site_url('task', $task->id); ?>">
+                                            <span class=""><?php user_info($task->sen_u_id, 'display_name'); ?></span>
+                                            <br/>
+                                            <span class="text-muted"><?php echo $task->title; ?></span></td>
+                                    <td class="visible-xs-landscape">
+                                        <?php echo til_get_date($task->date_end, 'datetime'); ?>
+                                        <br/>
+                                        <?php echo get_time_late(til_get_date($task->date_end, 'datetime')); ?>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="hidden-xs" colspan="5" style="padding: 0px; border-top: 0px;">
+                                        <?php if ($task->choice_count): ?>
+                                            <div class="progress m-0 br-2 h-3">
+                                                <div class="progress-bar progress-bar-stripedd <?php echo $progressbar_style; ?> text-muted"
+                                                     role="progressbar" aria-valuenow="<?php echo $part_completed; ?>"
+                                                     aria-valuemin="30" aria-valuemax="100"
+                                                     style="width: <?php echo($part_completed == '0' ? '25' : $part_completed); ?>%;">
+                                                    <span class="sr-only"><?php echo $part_completed; ?>% tamamland?</span>
+                                                    %<?php echo $part_completed; ?> tamamland?
+                                                </div>
                                             </div>
-                                        </div>
 
-                                    <?php endif; ?>
-                                </td>
-                            </tr>
-                        <?php endforeach; ?>
-                        </tbody>
-                    </table>
+                                        <?php endif; ?>
+                                    </td>
+                                </tr>
+                            <?php endforeach; ?>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-            </div>
-        <?php else: ?>
+            <?php else: ?>
 
-        <?php endif; ?>
+            <?php endif; ?>
 
         </div>
     </div>
@@ -950,14 +960,7 @@ add_page_info('title', 'order delivery');
         });
     }
 </script>
-
-
 <?php get_footer(); ?>
-
-
-
-
-
 <?php
 function rastgeleYazi($uzunluk = 10)
 {

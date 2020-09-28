@@ -110,7 +110,7 @@ html {
 }
 
 body {
-    font-family: 'almarailight';
+    font-family: 'almaraibold';
     overflow-x: hidden;
     background: #eee;
     /*background-image: url(../img/bg.png);*/
@@ -1413,8 +1413,9 @@ header .dropdown-message-list li a {
 
 .breadcrumb-header ol.breadcrumb {
     background-color: transparent;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     float: right;
+    margin-top: 7px;
 }
 
 @media (max-width: 768px) {
@@ -2562,7 +2563,7 @@ form.panel-search .input-group .input-group-btn .btn.panel-search-btn {
 .avataruser {
     position: absolute;
     right: 75px;
-
+    top:10px;
     z-index: 99999999;
 }
 
@@ -2631,7 +2632,7 @@ form.panel-search .input-group .input-group-btn .btn.panel-search-btn {
     font-size: 20px;
     margin: 0;
     text-align: center;
-    margin-top: 140px;
+    margin-top: 160px;
 }
 
 /* 10.1 Sidebar Menu */

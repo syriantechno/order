@@ -2,7 +2,7 @@
 
 <!--    <div class="sidebar1"></div>-->
 
-    <div class="card">
+    <div class="card" style="height: 100%;">
 <!--        <div class="sideuser"></div>-->
         <div class="avataruser">
 
@@ -17,7 +17,7 @@
 
         <ul class="sidebar-menu ff-1">
             <li><a href="<?php site_url(); ?>"><i class="fa fa-home"></i> لوحة التحكم</a></li>
-            <li class="active"><a href="#"><i class="fa fa-users"></i> بطاقات المستفيدين <span
+            <li class=""><a href="#"><i class="fa fa-users"></i> بطاقات المستفيدين <span
                             class="fa fa-caret-down caret-opt"></span></a>
                 <ul class="submenu">
                     <li><a href="<?php site_url('admin/account'); ?>"><i class="fa fa-user-o"></i>ادارة المستفيدين</a>
@@ -33,29 +33,28 @@
                             الحسابات</a></li><?php endif; ?>
                 </ul>
             </li>
-            <li class="active"><a href="#"><i class="fa fa-cubes"></i> المعونة والمساعدة <span
+            <li class=""><a href="#"><i class="fa fa-cubes"></i> المواد والمستودع<span
                             class="fa fa-caret-down caret-opt"></span></a>
                 <ul class="submenu">
-                    <li><a href="<?php site_url('admin/item/'); ?>"><i class="fa fa-cube"></i>ادارة المعونة</a></li>
+                    <li><a href="<?php site_url('admin/item/'); ?>"><i class="fa fa-cube"></i>ادارة المواد</a></li>
                     <?php if (user_access('admin')): ?>
-                        <li><a href="<?php site_url('admin/item/add.php'); ?>"><i class="fa fa-plus"></i>اضافة معونة</a>
+                        <li><a href="<?php site_url('admin/item/add.php'); ?>"><i class="fa fa-plus"></i>اضافة مادة</a>
                         </li><?php endif; ?>
-                    <li><a href="<?php site_url('admin/item/list.php'); ?>"><i class="fa fa-bars"></i>قائمة المعونة</a>
+                    <li><a href="<?php site_url('admin/item/list.php'); ?>"><i class="fa fa-bars"></i>قائمة المواد</a>
                     </li>
                 </ul>
             </li>
-            <li class="admin-form"><a href="#"><i class="fa fa-shopping-cart"></i> التوزيع <span
+            <li class="admin-form"><a href="#"><i class="fa fa-shopping-cart"></i> الطلبات <span
                             class="fa fa-caret-down caret-opt"></span></a>
                 <ul class="submenu">
-                    <li><a href="<?php site_url('admin/form/'); ?>"><i class="fa fa-shopping-bag"></i>ادارة توزيع
-                            المعونة</a></li>
+                    <li><a href="<?php site_url('admin/form/'); ?>"><i class="fa fa-shopping-bag"></i>ادارة الطلبات</a></li>
                     <!--                <li><a href="-->
                     <?php //site_url('admin/form/detail.php?out'); ?><!--"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i> فاتورة مبيعات جديدة</a></li>-->
                     <li><a href="<?php site_url('admin/form/detail.php?in'); ?>"><i class="fa fa-cart-arrow-down"
-                                                                                    aria-hidden="true"></i>توزيع معونة
+                                                                                    aria-hidden="true"></i>تسجيل طلب
                             جديد</a></li>
                     <li><a href="<?php site_url('admin/form/list.php'); ?>"><i class="fa fa-shopping-cart"></i>جميع
-                            المعونات</a></li>
+                            الطلبات</a></li>
 
                 </ul>
             </li>

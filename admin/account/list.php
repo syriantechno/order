@@ -118,8 +118,9 @@ endif;
                             <div class="btn-group btn-icon hidden-xs" data-toggle="tooltip" data-placement="top"
                                  title="Pdf">
                                 <button type="button" class="btn btn-default btn-xs dropdown-toggle"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fa fa-file-pdf-o"></i>
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: transparent;
+    border: transparent; font-size: x-large;">
+                                    <i class="fa fa-file-pdf-o text-white"></i>
                                 </button>
                                 <ul class="dropdown-menu dropdown-menu-right">
                                     <li class="dropdown-header"><i class="fa fa-download"></i> تصدير PDF</li>
@@ -136,8 +137,9 @@ endif;
                             <div class="btn-group btn-icon hidden-xs" data-toggle="tooltip" data-placement="top"
                                  title="Excel">
                                 <button type="button" class="btn btn-default btn-xs dropdown-toggle"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fa fa-file-excel-o"></i>
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: transparent;
+    border: transparent; font-size: x-large;">
+                                    <i class="fa fa-file-excel-o text-white"></i>
                                 </button>
                                 <ul class="dropdown-menu dropdown-menu-right">
                                     <li class="dropdown-header"><i class="fa fa-download"></i> EXCEL تصدير</li>
@@ -154,8 +156,9 @@ endif;
                             <div class="btn-group btn-icon hidden-xs" data-toggle="tooltip" data-placement="top"
                                  title="طباعة">
                                 <button type="button" class="btn btn-default btn-xs dropdown-toggle"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fa fa-print"></i>
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: transparent;
+    border: transparent; font-size: x-large;">
+                                    <i class="fa fa-print text-white"></i>
                                 </button>
                                 <ul class="dropdown-menu dropdown-menu-right">
                                     <li class="dropdown-header"><i class="fa fa-file-o"></i> طباعة</li>
