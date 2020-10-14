@@ -3,7 +3,6 @@
 <?php
 add_page_info('title', 'order delivery');
 ?>
-<?php $accounts = get_accounts(array('_GET' => true)); ?>
 
 
 <div class="row">
@@ -16,12 +15,12 @@ add_page_info('title', 'order delivery');
                             <i class="faw fa-users" style="color: #ffffff; font-size: 45px; "></i>
                         </div>
                         <span class="icon-box1">
-                <div class="stats-title">الحسابات <small class="text-muted"
-                                                         style="color: #ffffff">(<?php echo $accounts->num_rows; ?>)</small></div>
-                <br>
+                <div class="stats-title">الحسابات</div>
+                            <br>
+                <div class="stats-title"><small class="text-muted">(<?php echo $accounts->num_rows; ?>)</small></div>
                 <br>
                 <hr>
-			    <div class="stats-desc">إضافة وتعديل وكشف حساب</div>
+			    <div class="stats-desc text-muted" style="color: #999;">إضافة وتعديل وكشف حساب</div>
                 </span>
                     </a>
                 </div> <!-- /.box-menu -->
@@ -34,10 +33,11 @@ add_page_info('title', 'order delivery');
                         </div>
                         <span class="icon-box1">
                             <div class="stats-title">المواد</div>
-                            <br>
+                              <br>
+                            <div class="stats-title"><small class="text-muted">(<?php echo $list->num_rows; ?>)</small></div>
                 <br>
                              <hr>
-			    <div class="stats-desc">اضافة وتعديل وجرد المواد</div>
+			    <div class="stats-desc text-muted" style="color: #999;">اضافة وتعديل وجرد المواد</div>
                         </span>
 
                     </a>
@@ -50,11 +50,13 @@ add_page_info('title', 'order delivery');
                             <i class="faw fa-shopping-cart" style="color: #ffffff; font-size: 45px; "></i>
                         </div>
                         <span class="icon-box1">
-                            <div class="stats-title"> التوزيع  </div>
-                             <br>
+                            <div class="stats-title"> الطلبات  </div>
+                               <br>
+
+                <div class="stats-title"><small class="text-muted">(<?php echo $accounts->num_rows; ?>)</small></div>
                 <br>
                              <hr>
-			    <div class="stats-desc">إضافة وتعديل توزيع المعونة</div>
+			    <div class="stats-desc text-muted" style="color: #999;">إضافة وتعديل الطلبات</div>
                         </span>
 
                     </a>
@@ -69,10 +71,11 @@ add_page_info('title', 'order delivery');
                         </div>
                         <span class="icon-box1">
                             <div class="stats-title">الاموال</div>
-                             <br>
+                               <br>
+                <div class="stats-title"><small class="text-muted">(<?php echo get_set_money($total['case']); ?>)</small></div>
                 <br>
                              <hr>
-			    <div class="stats-desc">إضافة صناديق وبنوك</div>
+			    <div class="stats-desc text-muted" style="color: #999;">إضافة صناديق وبنوك</div>
                         </span>
 
                     </a>
@@ -564,9 +567,9 @@ add_page_info('title', 'order delivery');
 <div class="row space-6" style="padding-right: 15px; padding-left: 15px;">
 
 
-    <small class="text-muted"><i class="fa fa-long-arrow-up text-black"></i> نماذج المعونة</small>
+    <small class="text-muted"><i class="fa fa-long-arrow-up text-black"></i> نماذج المبيعات</small>
 
-    <?php if ($form_status_all = get_form_status_all('0')): ?>
+    <?php if ($form_status_all = get_form_status_all('1')): ?>
         <div>
             <div class="list-group mobile-full list-group-dashboard" style="width: 98%;">
                 <?php foreach ($form_status_all as $key => $status): ?>
@@ -585,18 +588,19 @@ add_page_info('title', 'order delivery');
     <?php endif; ?>
 
 </div>
+
 <div class="row">
     <div class="col-md-6">
         <div class="h-30"></div>
         <div class="h-7"></div>
         <?php $query = db()->query("SELECT * FROM " . dbname('forms') . " WHERE status='1' AND type='form' AND in_out='0' ORDER BY date DESC LIMIT 50"); ?>
         <?php if ($query->num_rows): ?>
-        <div class="card">
+        <div class="panel">
             <div class="card-header card-header-tabs card-header-blue">
                 <div class="panel-heading"><h4 class="panel-title"><i class="fa fa-file-o text-white"></i> اخر 50 حركة
                     </h4></div>
             </div>
-            <div class="panel-body" style="height:280px; overflow: auto;">
+<!--            <div class="panel-body" style="height:280px; overflow: auto;">-->
                 <table class="table table-hover table-condensed table-striped table-striped">
                     <tbody>
                     <?php while ($list = $query->fetch_object()): ?>
@@ -725,27 +729,27 @@ add_page_info('title', 'order delivery');
                                     <div class="h-10"></div>
 
                                 </div>
-                                <div class="h-20"></div>
+
                             </div>
                             <div class="col-md-6">
                                 <div class="">
                                     <small class="text-muted"></small>
                                     <br/>
-                                    <!--									<span class="ff-2 fs-14 bold">-->
-                                    <?php //echo get_set_money($total['item']['purc']); ?><!--</span> <small class="text-muted">-->
-                                    <?php //echo til()->company->currency; ?><!--</small>-->
+                                    									<span class="ff-2 fs-14 bold">
+                                    <?php echo get_set_money($total['item']['purc']); ?></span> <small class="text-muted">
+                                    <?php echo til()->company->currency; ?></small>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="">
                                     <small class="text-muted"></small>
                                     <br/>
-                                    <div class="h-7"></div>
 
 
-                                    <!--									<span class="ff-2 fs-14 bold">-->
-                                    <?php //echo get_set_money($total['item']['sale']); ?><!--</span> <small class="text-muted">-->
-                                    <?php //echo til()->company->currency; ?><!--</small>-->
+
+                                    									<span class="ff-2 fs-14 bold">
+                                    <?php echo get_set_money($total['item']['sale']); ?></span> <small class="text-muted">
+                                    <?php echo til()->company->currency; ?></small>
                                 </div>
                             </div>
                         </div>

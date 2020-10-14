@@ -760,7 +760,7 @@ function til_get_money_convert_string($money = '0.00')
     }
 
 
-    return "$l10 $l7 $l8 $l9 $l6 $l4 $l5 $l3 $l1 $l2 ليرة سورية و $r2 $r1 جزءلاغير ";
+    return "$l10 $l7 $l8 $l9 $l6 $l4 $l5 $l3 $l1 $l2 ليرة لبنانية و $r2 $r1 جزءلاغير ";
 } //.til_get_money_convert_string()
 
 

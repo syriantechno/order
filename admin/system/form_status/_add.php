@@ -168,9 +168,10 @@ print_alert();
 
             <?php if ($_in_out): ?>
                 <div class="form-group">
-                    <label for="status_name">نموذج توزيع المعونة</label>
+                    <label for="status_name">الحالة</label>
                     <select name="val_enum" id="val_enum" class="form-control select">
-                        <option value="0">توزيع جديد</option>
+                        <option value="0">مشتريات</option>
+                        <option value="1">مبيعات</option>
 
                     </select>
                 </div> <!-- /.form-group -->
@@ -229,8 +230,11 @@ print_alert();
     <?php endif; ?>
     <div class="col-lg-4 col-md-6">
 
-        <div class="panel panel-default">
-            <div class="panel-heading"><h3 class="panel-title">نماذج التوزيع</h3></div>
+        <div class="card">
+            <div class="card-header card-header-tabs card-header-blue">
+                <div class="panel-heading"><h4 class="panel-title"><i class="fa fa-file-o text-white"></i> نماذج المشتريات
+                    </h4></div>
+            </div>
             <div class="panel-body" style="height: auto">
                 <?php $form_status = get_form_status_all(array('taxonomy' => $_taxonomy, 'in_out' => 0)); ?>
                 <?php if ($form_status): ?>
@@ -263,7 +267,44 @@ print_alert();
                 <?php endif; ?>
             </div> <!-- /.panel-body -->
         </div> <!-- /.panel -->
-
+        <div class="h-40"></div>
+        <div class="card">
+            <div class="card-header card-header-tabs card-header-blue">
+                <div class="panel-heading"><h4 class="panel-title"><i class="fa fa-file-o text-white"></i> نماذج المبيعات
+                    </h4></div>
+            </div>
+            <div class="panel-body" style="height: auto">
+                <?php $form_status = get_form_status_all(array('taxonomy' => $_taxonomy, 'in_out' => 1)); ?>
+                <?php if ($form_status): ?>
+                    <table class="table table-hover table-condensed">
+                        <thead>
+                        <tr>
+                            <th>اسم الحالة</th>
+                            <?php if ($_email_template): ?>
+                                <th width="100">بريد تلقائي</th><?php endif; ?>
+                            <?php if ($_sms_template): ?>
+                                <th width="100">رسالة نصية تلقائية</th><?php endif; ?>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <?php foreach ($form_status as $status): ?>
+                            <tr>
+                                <td>
+                                    <a href="?taxonomy=<?php echo $_taxonomy; ?>&detail&status_id=<?php echo $status->id; ?>"><span
+                                                class="<?php if ($status->bg_color): ?>label label-success<?php endif; ?>"
+                                                style="background-color:<?php echo $status->bg_color; ?>; color:<?php echo $status->color; ?>;"><?php echo $status->name; ?></span></a> <?php if ($status->is_default == 'default'): ?>
+                                        <small class="text-muted">(افتراضي)</small><?php endif; ?></td>
+                                <?php if ($_email_template): ?>
+                                    <td class="text-center"><?php if ($status->auto_email == 'auto_email'): ?>نعم<?php else: ?> لا <?php endif; ?></td><?php endif; ?>
+                                <?php if ($_sms_template): ?>
+                                    <td class="text-center"><?php if ($status->auto_sms == 'auto_sms'): ?>نعم<?php else: ?> لا <?php endif; ?></td><?php endif; ?>
+                            </tr>
+                        <?php endforeach; ?>
+                        </tbody>
+                    </table>
+                <?php endif; ?>
+            </div> <!-- /.panel-body -->
+        </div> <!-- /.panel -->
 
     </div> <!-- /.col-lg-4 -->
 </div> <!-- /.row -->

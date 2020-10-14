@@ -52,10 +52,10 @@ add_page_info('nav', array('name' => $item->name));
     <ul class="nav nav-pills mb-3" role="tablist">
         <li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab"
                                                   aria-controls="home" aria-expanded="true"><i
-                        class="fa fa-id-card-o"></i><span class="hidden-xs"> بطاقة المعونة</span></a></li>
+                        class="fa fa-id-card-o"></i><span class="hidden-xs"> بطاقة المادة</span></a></li>
         <li role="presentation" class=""><a href="#forms" role="tab" id="forms-tab" data-toggle="tab"
                                             aria-controls="forms" aria-expanded="false"><i class="fa fa-list"></i><span
-                        class="hidden-xs"> كشف حركات المعونة</span></a></li>
+                        class="hidden-xs"> كشف حركات المادة</span></a></li>
         <li role="presentation" class=""><a href="#logs" role="tab" id="logs-tab" data-toggle="tab" aria-controls="logs"
                                             aria-expanded="false"><i class="fa fa-database"></i><span class="hidden-xs"> سجل العمليات</span></a>
         </li>
@@ -110,13 +110,13 @@ add_page_info('nav', array('name' => $item->name));
 
                     <form name="form_add_accout" id="form_add_account" action="" method="POST" class="validate">
                         <div class="form-group">
-                            <label for="code">رمز المعونة <sup><i class="fa fa-barcode"></i> كود الباركود</sup> </label>
+                            <label for="code">رمز المادة <sup><i class="fa fa-barcode"></i> كود الباركود</sup> </label>
                             <input type="text" name="code" id="code" value="<?php echo $item->code; ?>"
                                    class="form-control" minlength="3" maxlength="32">
                         </div> <!-- /.form-group -->
 
                         <div class="form-group">
-                            <label for="name">اسم المعونة <sup class="text-muted">اسم المعونة</sup></label>
+                            <label for="name">اسم المادة <sup class="text-muted">اسم المادة</sup></label>
                             <input type="text" name="name" id="name" value="<?php echo $item->name; ?>"
                                    class="form-control required focus" minlength="3" maxlength="50">
                         </div> <!-- /.form-group -->
@@ -177,6 +177,33 @@ add_page_info('nav', array('name' => $item->name));
                                            onfocusout="calc_vat();">
                                 </div> <!-- /.form-group -->
                             </div> <!-- /.col -->
+                            <div class="col-md-2">
+                                <br/>
+
+                                <div class="img-thumbnail">
+                                    <img src="<?php echo $active->avatar; ?>" id="avatar_view"
+                                         onclick="document.getElementById('avatar').click()" class="img-responsive"
+                                         style="width:180px; height:180px;">
+
+                                    <div class="h-10"></div>
+                                    <a href="?id=<?php echo $active->id; ?>&delete_avatar" class="pull-right text-danger fs-12"><i
+                                                class="fa fa-trash"></i> حذف هذه الصورة</a>
+                                </div> <!-- /img-thumbnail -->
+
+                                <div class="h-20"></div>
+                                <div class="form-group hidden">
+                                    <label for="avatar">تحميل صورة جديدة.</label>
+                                    <input type="hidden" name="img_uniquetime" value="<?php usleep(1000);
+                                    uniquetime(); ?>">
+                                    <input type="file" name="avatar" id="avatar"
+                                           onchange="render_form_file(this, function(img) { document.getElementById('avatar_view').src = img; });">
+                                </div> <!-- /.form-group -->
+
+
+                                <div class="form-group hidden-md hidden-lg hidden-sm">
+                                    <button class="btn btn-default pull-right">حفظ</button>
+                                </div> <!-- /.form-group -->
+                            </div> <!-- /.col-md-2 -->
                         </div> <!-- /.row -->
 
 
@@ -186,9 +213,11 @@ add_page_info('nav', array('name' => $item->name));
 
                             <button class="btn btn-success btn-xs-block btn-insert"><i class="fa fa-floppy-o"></i> حفظ
                             </button>
+
                         </div>
                     </form>
                 </div> <!-- /.col-* -->
+
                 <div class="col-md-6">
 
                     <small class="text-muted"><i class="fa fa-calendar-o"></i> حالة الأسهم الحالية</small>
@@ -494,8 +523,8 @@ add_page_info('nav', array('name' => $item->name));
                             <th width="150" class="text-center">داخل</th>
                             <th width="150" class="text-center">خارج</th>
 
-                            <!--							<th width="150" class="text-center">دخول</th>-->
-                            <!--							<th width="150" class="text-center">خروج</th>-->
+                            							<th width="150" class="text-center">دخول</th>
+                            							<th width="150" class="text-center">خروج</th>
                             <th width="150" class="text-center">الرصيد</th>
                         </tr>
 

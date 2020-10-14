@@ -14,10 +14,10 @@ if (10 < 9) {
 }
 
 if (!$account = get_account($_GET['id'])) {
-    add_page_info('title', 'بطاقة المستفيد');
-    add_page_info('nav', array('name' => 'المستفيد', 'url' => get_site_url('admin/account/')));
+    add_page_info('title', 'بطاقة الحساب');
+    add_page_info('nav', array('name' => 'الحساب', 'url' => get_site_url('admin/account/')));
     add_page_info('nav', array('name' => 'قائمة', 'url' => get_site_url('admin/account/list.php')));
-    add_page_info('nav', array('name' => 'بطاقة المستفيد'));
+    add_page_info('nav', array('name' => 'بطاقة الحساب'));
     get_header();
     print_alert();
     get_footer();
@@ -52,18 +52,17 @@ $account = get_account($_GET['id'], false);
 
 
 add_page_info('title', $account->name);
-add_page_info('nav', array('name' => 'المستفيد', 'url' => get_site_url('admin/account/')));
+add_page_info('nav', array('name' => 'الحساب', 'url' => get_site_url('admin/account/')));
 add_page_info('nav', array('name' => 'قائمة', 'url' => get_site_url('admin/account/list.php')));
 add_page_info('nav', array('name' => $account->name));
 ?>
-
 
 <?php if ($account->status == '0'): ?>
     <?php echo get_alert('<i class="fa fa-trash-o"></i> <b>الحذر!</b> بطاقة الحساب غير نشطة.', 'warning', false); ?>
 <?php else: ?>
     <?php create_modal(array('id' => 'status_account',
-        'title' => 'بطاقة المستفيد <u>معطلة</u>',
-        'content' => _b($account->name) . ' هل تريد بالتاكيد تعطيل بيانات المستفيد؟ <br /> <small>اذا قمت بالغاء بطاقة المستفيد فلن تستطيع البحث عنه او ايجاده ضمن النظام <br /> قد تفقد جميع البيانات المتعلقة به </small>',
+        'title' => 'بطاقة الحساب <u>معطلة</u>',
+        'content' => _b($account->name) . ' هل تريد بالتاكيد تعطيل بيانات الحساب؟ <br /> <small>اذا قمت بالغاء بطاقة الحساب فلن تستطيع البحث عنه او ايجاده ضمن النظام <br /> قد تفقد جميع البيانات المتعلقة به </small>',
         'btn' => '<a href="?id=' . $account->id . '&status=0" class="btn btn-danger">نعم, موافق</a>')); ?>
 <?php endif; ?>
 
@@ -71,10 +70,10 @@ add_page_info('nav', array('name' => $account->name));
 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
     <li class="nav-item"><a class="nav-link active" href="#home" id="home-tab" role="tab" data-toggle="tab"
                             aria-controls="home" aria-selected="true"><i class="fa fa-id-card-o"></i><span
-                    class="hidden-xs"> بطاقة المستفيد</span></a></li>
+                    class="hidden-xs"> بطاقة الحساب</span></a></li>
     <li class="nav-item"><a href="#forms" role="tab" id="forms-tab" data-toggle="tab" aria-controls="forms"
                             aria-selected="false"><i class="fa fa-list"></i><span
-                    class="hidden-xs">كشف المستفيد</span></a></li>
+                    class="hidden-xs">كشف الحساب</span></a></li>
     <li class="nav-item"><a href="#logs" role="tab" id="logs-tab" data-toggle="tab" aria-controls="logs"
                             aria-selected="false"><i class="fa fa-database"></i><span
                     class="hidden-xs"> سجل العمليات</span></a>
@@ -105,9 +104,9 @@ add_page_info('nav', array('name' => $account->name));
                     class="hidden-xs"> طباعة</span><span class="caret"></span></a>
         <ul class="dropdown-menu" aria-labelledby="myTabDrop1" id="myTabDrop1-contents">
             <li><a href="print-statement.php?id=<?php echo $account->id; ?>&print" target="_blank"><i
-                            class="fa fa-file-text-o fa-fw"></i> طباعة كشف المستفيد</a></li>
+                            class="fa fa-file-text-o fa-fw"></i> طباعة كشف الحساب</a></li>
             <li><a href="print-statement.php?id=<?php echo $account->id; ?>" target="_blank"><i
-                            class="fa fa-file-text-o fa-fw"></i> معاينة كشف المستفيد</a></li>
+                            class="fa fa-file-text-o fa-fw"></i> معاينة كشف الحساب</a></li>
             <li class="divider"></li>
             <li><a href="print-barcode.php?id=<?php echo $account->id; ?>&print" target="_blank"><i
                             class="fa fa-barcode fa-fw"></i> طباعة الباركود</a></li>
@@ -137,7 +136,7 @@ add_page_info('nav', array('name' => $account->name));
                             <div class="row">
                                 <div class="col-xs-6 col-md-6">
                                     <div class="form-group">
-                                        <label for="name">كود المستفيد</label>
+                                        <label for="name">كود الحساب</label>
                                         <input type="text" name="name" id="name"
                                                value="<?php echo $account->code; ?>" class="form-control required"
                                                maxlength="32" readonly>
@@ -160,7 +159,7 @@ add_page_info('nav', array('name' => $account->name));
                             <div class="row">
                                 <div class="col-xs-6 col-md-6">
                                     <div class="form-group">
-                                        <label for="name">اسم المستفيد <sup class="text-muted">الاسم الشخصي،
+                                        <label for="name">اسم الحساب <sup class="text-muted">الاسم الشخصي،
                                                 اللقب </sup></label>
                                         <input type="text" name="name" id="name"
                                                value="<?php echo $account->name; ?>" class="form-control required"
@@ -783,7 +782,7 @@ add_page_info('nav', array('name' => $account->name));
                         <th class="hidden-xs-portrait">الموظف</th>
                         <th width="80">مدين</th>
                         <th width="80">دائن</th>
-                        <!--							<th width="100">الرصيد</th>-->
+                        							<th width="100">الرصيد</th>
                     </tr>
                 <?php else: ?>
                     <tr>
@@ -794,9 +793,9 @@ add_page_info('nav', array('name' => $account->name));
                         <th class="userinfo" width="60">الموظف</th>
                         <th>الحركة</th>
                         <th width="30%">البيان</th>
-                        <!--							<th width="140">مدين</th>-->
-                        <!--							<th width="140">دائن</th>-->
-                        <!--							<th width="140">الرصيد</th>-->
+                        							<th width="140">مدين</th>
+                        							<th width="140">دائن</th>
+                        							<th width="140">الرصيد</th>
 
                     </tr>
                 <?php endif; ?>
@@ -823,12 +822,12 @@ add_page_info('nav', array('name' => $account->name));
                             <td class="hidden-xs-portrait">
                                 <small class="text-muted"><?php echo get_user_info($form->user_id, 'display_name'); ?></small>
                             </td>
-                            <!--							<td class="text-right">-->
-                            <?php //if($form->in_out == 1) { echo get_set_money($form->total, true); $balance = $balance - $form->total; } else { echo ''; } ?><!--</td>-->
-                            <!--							<td class="text-right">-->
-                            <?php //if($form->in_out == 0) { echo get_set_money($form->total, true); $balance = $balance + $form->total; } else { echo ''; } ?><!--</td>-->
-                            <!--							<td class="text-right">-->
-                            <?php //echo get_set_money($balance, true); ?><!--</td>-->
+                            							<td class="text-right">
+                            <?php if($form->in_out == 1) { echo get_set_money($form->total, true); $balance = $balance - $form->total; } else { echo ''; } ?></td>
+                            							<td class="text-right">
+                            <?php if($form->in_out == 0) { echo get_set_money($form->total, true); $balance = $balance + $form->total; } else { echo ''; } ?></td>
+                            							<td class="text-right">
+                            <?php echo get_set_money($balance, true); ?></td>
                         </tr>
                     <?php else: ?>
                         <tr>
@@ -855,7 +854,7 @@ add_page_info('nav', array('name' => $account->name));
                                 if ($form->type == 'form') {
                                     $item = get_form_items($form->id);
                                     $item = $item->list[0];
-                                    $in_out = ($form->in_out == '0') ? 'معونة' : 'مبيعات';
+                                    $in_out = ($form->in_out == '0') ? 'مشتريات' : 'مبيعات';
                                     echo " {$in_out} : "
                                         . " عدد {$form->item_quantity} "
                                         . " : {$item->item_name}";
@@ -874,12 +873,12 @@ add_page_info('nav', array('name' => $account->name));
                                 echo $meta->meta_value;
                                 ?>
                             </td>
-                            <!--							<td class="text-right">-->
-                            <?php //if($form->in_out == 1) { echo get_set_money($form->total, true); $balance = $balance + $form->total; } else { echo ''; } ?><!--</td>-->
-                            <!--                            <td class="text-right">-->
-                            <?php //if($form->in_out == 0) { echo get_set_money($form->total, true); $balance = $balance - $form->total; } else { echo ''; } ?><!--</td>-->
-                            <!--							<td class="text-right">-->
-                            <?php //echo get_set_money($balance, true); ?><!--</td>-->
+                            							<td class="text-right">
+                            <?php if($form->in_out == 1) { echo get_set_money($form->total, true); $balance = $balance + $form->total; } else { echo ''; } ?></td>
+                                                        <td class="text-right">
+                            <?php if($form->in_out == 0) { echo get_set_money($form->total, true); $balance = $balance - $form->total; } else { echo ''; } ?></td>
+                            							<td class="text-right">
+                            <?php echo get_set_money($balance, true); ?></td>
 
                         </tr>
 
@@ -891,56 +890,91 @@ add_page_info('nav', array('name' => $account->name));
                     <td colspan="1" class="hidden-xs-portrait"></td>
                     <td colspan="1" class="userinfo"></td>
                 <?php else: ?>
-                    <!--                    <td colspan="1" class="text-right" ></td>-->
-                    <!--                    <td colspan="1" class="text-right" ></td>-->
-                    <!--                    <td colspan="1" class="text-right" ></td>-->
-                    <!--                    <td colspan="1" class="text-right" ></td>-->
-                    <!--                    <td colspan="1" class="text-right" ></td>-->
-                    <!--                    <td colspan="1" class="text-right" ></td>-->
-                    <!--                    <td colspan="1" class="userinfo" ></td>-->
+                                        <td colspan="1" class="text-right" style="
+                    color: black;
+                    background: #f9b657;
+                    font-weight: bold;
+                    text-align: center;
+                "></td>
+                                        <td colspan="1" class="text-right" style="
+                    color: black;
+                    background: #f9b657;
+                    font-weight: bold;
+                    text-align: center;
+                "></td>
+                                        <td colspan="1" class="text-right" style="
+                    color: black;
+                    background: #f9b657;
+                    font-weight: bold;
+                    text-align: center;
+                "></td>
+                                        <td colspan="1" class="text-right" style="
+                    color: black;
+                    background: #f9b657;
+                    font-weight: bold;
+                    text-align: center;
+                "></td>
+                                        <td colspan="1" class="text-right" style="
+                    color: black;
+                    background: #f9b657;
+                    font-weight: bold;
+                    text-align: center;
+                "></td>
+                                        <td colspan="1" class="text-right" style="
+                    color: black;
+                    background: #f9b657;
+                    font-weight: bold;
+                    text-align: center;
+                "></td>
+                                        <td colspan="1" class="userinfo" style="
+                    color: black;
+                    background: #f9b657;
+                    font-weight: bold;
+                    text-align: center;
+                "></td>
                 <?php endif; ?>
 
-                <!--                <td colspan="1" class="text-right"style="-->
-                <!--    color: black;-->
-                <!--    background: #6be0e2;-->
-                <!--    font-weight: bold;-->
-                <!--    text-align: center;-->
-                <!--">-->
-                <!---->
-                <!--                    --><?php //echo get_set_money($accountTotal['payment_out'] + $accountTotal['form_out']); ?>
-                <!--                </td>-->
-                <!--                <td colspan="1" class="text-right"  style="-->
-                <!--    color: black;-->
-                <!--    background: #6be0e2;-->
-                <!--    font-weight: bold;-->
-                <!--    text-align: center;-->
-                <!--">-->
-                <!--                    --><?php //echo get_set_money($accountTotal['payment_in'] + $accountTotal['form_in']); ?>
-                <!--                </td>-->
-                <!--                <td colspan="1" class="text-right"  style="-->
-                <!--    color: black;-->
-                <!--    background: #6be0e2;-->
-                <!--    font-weight: bold;-->
-                <!--    text-align: center;-->
-                <!--">-->
-                <!--                    --><?php //echo get_set_money($account->balance); ?>
-                <!--                </td>-->
+                                <td colspan="1" class="text-right" style="
+                    color: black;
+                    background: #f9b657;
+                    font-weight: bold;
+                    text-align: center;
+                ">
+
+                                    <?php echo get_set_money($accountTotal['payment_out'] + $accountTotal['form_out']); ?>
+                                </td>
+                                <td colspan="1" class="text-right"  style="
+                    color: black;
+                    background: #f9b657;
+                    font-weight: bold;
+                    text-align: center;
+                ">
+                                    <?php echo get_set_money($accountTotal['payment_in'] + $accountTotal['form_in']); ?>
+                                </td>
+                                <td colspan="1" class="text-right"  style="
+                    color: black;
+                    background: #f9b657;
+                    font-weight: bold;
+                    text-align: center;
+                ">
+                                    <?php echo get_set_money($account->balance); ?>
+                                </td>
 
                 </tbody>
                 <tfoot style="font-size: 14px;">
-                <!--                  <tr>-->
-                <!--                      --><?php
-                //                      $D_C = ($account->balance < 0 )? 'دائن' : 'مدين' ;
-                //                       ?>
-                <!--                       <td colspan="10" class="text-right" ><b>الرصيد : </b>-->
-                <!--                           <span class="ff-2 fs-17 bold -->
-                <?php //echo $account->balance < 0 ? 'text-danger' : 'text-success'; ?><!--">-->
-                <!--                               --><?php //echo get_set_money($account->balance); ?>
-                <!--                               --><?php //echo $D_C;?><!--</span>-->
-                <!--                       <h> فقط : </h> --><?php //echo til_get_money_convert_string($account->balance); ?>
-                <!--                       </td>-->
-                <!---->
-                <!--                   </tr>-->
+                                  <tr>
+                                      <?php
+                                      $D_C = ($account->balance < 0 )? 'دائن' : 'مدين' ;
+                                       ?>
+                                       <td colspan="10" class="text-right" ><b>الرصيد : </b>
+                                           <span class="ff-2 fs-17 bold
+                <?php echo $account->balance < 0 ? 'text-danger' : 'text-success'; ?>">
+                                               <?php echo get_set_money($account->balance); ?>
+                                               <?php echo $D_C;?></span>
+                                       <h> فقط : </h> <?php echo til_get_money_convert_string($account->balance); ?>
+                                       </td>
+
+                                   </tr>
 
             </table>
         <?php else: ?>

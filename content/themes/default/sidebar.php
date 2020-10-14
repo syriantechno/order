@@ -2,7 +2,7 @@
 
 <!--    <div class="sidebar1"></div>-->
 
-    <div class="card" style="height: 100%;">
+    <div class="card">
 <!--        <div class="sideuser"></div>-->
         <div class="avataruser">
 
@@ -47,14 +47,10 @@
             <li class="admin-form"><a href="#"><i class="fa fa-shopping-cart"></i> الطلبات <span
                             class="fa fa-caret-down caret-opt"></span></a>
                 <ul class="submenu">
-                    <li><a href="<?php site_url('admin/form/'); ?>"><i class="fa fa-shopping-bag"></i>ادارة الطلبات</a></li>
-                    <!--                <li><a href="-->
-                    <?php //site_url('admin/form/detail.php?out'); ?><!--"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i> فاتورة مبيعات جديدة</a></li>-->
-                    <li><a href="<?php site_url('admin/form/detail.php?in'); ?>"><i class="fa fa-cart-arrow-down"
-                                                                                    aria-hidden="true"></i>تسجيل طلب
-                            جديد</a></li>
-                    <li><a href="<?php site_url('admin/form/list.php'); ?>"><i class="fa fa-shopping-cart"></i>جميع
-                            الطلبات</a></li>
+                    <li><a href="<?php site_url('admin/form/'); ?>"><i class="fa fa-shopping-bag"></i>ادارة الفواتير</a></li>
+                    <li><a href="<?php site_url('admin/form/detail.php?out'); ?>"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i> فاتورة مبيعات جديدة</a></li>
+                    <li><a href="<?php site_url('admin/form/detail.php?in'); ?>"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>فاتورة مشتريات جديدة</a></li>
+                    <li><a href="<?php site_url('admin/form/list.php'); ?>"><i class="fa fa-shopping-cart"></i>جميع الفواتير</a></li>
 
                 </ul>
             </li>

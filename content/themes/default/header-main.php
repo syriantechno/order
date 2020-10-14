@@ -422,5 +422,19 @@ sure_baslat();
     </div>
     <div class="clearfix"></div>
     <div class="h-10-10"></div>
+    <style>
+        ul.sidebar-menu li a:hover, ul.sidebar-menu li a:focus, ul.sidebar-menu li a:focus-within {
+            text-decoration: none;
+            background: linear-gradient(60deg, #7abbf3, #1e3799);
+            box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(0, 7, 233, 0.4);
+            border-radius: 5px;
+            color: #ffffff;
+        }
+        ul.sidebar-menu li ul.submenu li a:hover, ul.sidebar-menu li ul.submenu li.active a {
+            background-color: rgba(200, 200, 200, 0.2);
+            color: #3C4858;
+            box-shadow: none;
+        }
+    </style>
 
     <?php get_sidebar(); ?>

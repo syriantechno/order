@@ -438,7 +438,7 @@ function theme_get_logs($query = array())
                     <td>
                         <?php echo get_time_late($log->date); ?> منذ
                         <br/>
-                        <small class="text-muted"><?php echo $log->name_surname; ?></small>
+                        <small class="text-muted"><?php echo $log->name_username; ?></small>
                     </td>
                     <td>
                         <span class="hidden"><?php echo $log->log_key; ?></span>
